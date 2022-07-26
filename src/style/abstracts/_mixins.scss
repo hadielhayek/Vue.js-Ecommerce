@@ -1,14 +1,14 @@
 @mixin flex($jc, $ai) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-    @content;
+     display: flex;
+     justify-content: $jc;
+     align-items: $ai;
+     @content;
 }
 
 @mixin flex_col($gap) {
-    display: flex;
-    flex-direction: column;
-    gap: $gap;
+     display: flex;
+     flex-direction: column;
+     gap: $gap;
 }
 
 @import "./breakpoints.scss";
