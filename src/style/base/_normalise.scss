@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Athetic, sans-serif;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 4rem;
+}
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    font-family: inherit;
+    transition: 0.2s ease-in-out;
+}
