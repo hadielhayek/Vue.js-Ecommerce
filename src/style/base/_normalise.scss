@@ -13,11 +13,16 @@ body {
 h1 {
      font-size: 4.5rem;
      line-height: 5rem;
+     font-family: "Athletic Bold";
+     @include media("<=phone-tab") {
+          font-size: 3em;
+          line-height: 4rem;
+     }
 }
 section {
      width: 100%;
 }
-p{
+p {
      font-size: 1.2em;
      font-weight: lighter;
 }

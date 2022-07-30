@@ -1,5 +1,5 @@
 <template>
-     <landing/>
+     <landing />
      <Campaign />
 </template>
 
