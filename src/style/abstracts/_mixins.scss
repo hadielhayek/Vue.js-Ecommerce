@@ -14,13 +14,13 @@
 @mixin btn($bg, $col) {
      button {
           background-color: $bg;
-          padding: 1rem 2.3rem;
+          padding: 1rem 2.5rem;
           border-radius: 5rem;
           outline: none;
           color: $col !important;
           cursor: pointer;
           border: none;
-          font-size: 1.1em;
+          font-size: 1.2em;
           font-family: "Athletic Bold";
      }
 }

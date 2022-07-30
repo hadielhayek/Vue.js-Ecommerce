@@ -19,7 +19,7 @@ body {
      font-family: "Athletic";
 }
 h1 {
-     font-size: 4.5rem;
+     font-size: 5rem;
      line-height: 5rem;
      font-family: "Athletic Bold";
      @include media("<=phone-tab") {
@@ -33,4 +33,7 @@ section {
 p {
      font-size: 1.2em;
      font-weight: lighter;
+}
+::-webkit-scrollbar {
+     display: none;
 }

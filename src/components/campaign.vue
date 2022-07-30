@@ -18,7 +18,16 @@
           </div>
      </section>
      <div class="marquee">
-          <div class="slider"></div>
+          <div class="span_slider">
+               <h1 class="span_slider_wrap">
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
+               </h1>
+               <h1 class="span_slider_wrap">
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
+               </h1>
+          </div>
      </div>
 </template>
 
@@ -87,6 +96,31 @@
           & > div {
                width: 90%;
                margin: 0 auto;
+          }
+     }
+}
+.marquee {
+     background: $black-bg;
+     padding: 2rem 1rem;
+     .span_slider {
+          @include flex(space-between, center);
+          flex-wrap: nowrap;
+          overflow: visible;
+          &_wrap {
+               @include flex(center, center);
+               flex-wrap: nowrap;
+               gap: 0 1rem;
+               overflow: visible;
+               flex-shrink: 0;
+               &_txt {
+                    @include flex(space-between, center);
+               }
+          }
+          ._p {
+               color: $pale-orange;
+          }
+          ._g {
+               color: $croc-green;
           }
      }
 }
