@@ -49,6 +49,9 @@
                     @include flex_col(2rem);
                     p {
                          width: 80%;
+                         @include media("<=phone-tab") {
+                              width: 100%;
+                         }
                     }
                     .btn {
                          @include btn($pale-orange, black);
@@ -69,6 +72,9 @@
                     @include flex(center, center);
                     .img_cont {
                          width: 27rem;
+                         @include media("<=phone") {
+                              width: 20rem;
+                         }
                          img {
                               width: 100%;
                          }
