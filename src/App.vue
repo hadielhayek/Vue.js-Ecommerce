@@ -1,9 +1,9 @@
 <template>
-   <Campaign/>
+     <landing/>
+     <Campaign />
 </template>
 
 <script setup lang="ts">
-import campaignVue from './components/campaign.vue';
-import Campaign from './components/campaign.vue';
+// import landing from "./components/landing.vue"
+import Campaign from "./components/campaign.vue";
 </script>
-

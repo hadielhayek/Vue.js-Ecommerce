@@ -11,7 +11,8 @@ body {
      font-family: "Athletic";
 }
 h1 {
-     font-size: 4rem;
+     font-size: 4.5rem;
+     line-height: 5rem;
 }
 button {
      outline: none;
@@ -21,6 +22,10 @@ button {
      font-family: inherit;
      transition: 0.2s ease-in-out;
 }
-section{
-    width: 100%;
+section {
+     width: 100%;
+}
+p{
+     font-size: 1.2em;
+     font-weight: lighter;
 }
