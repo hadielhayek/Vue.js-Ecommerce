@@ -5,6 +5,14 @@
 }
 html {
      scroll-behavior: smooth;
+     font-size: calc(100vw / 1440 * 16);
+
+     @include media("<=tablet") {
+          font-size: calc(100vw / 475 * 10);
+     }
+     @include media("<=phone-tab") {
+          font-size: calc(100vw / 265 * 10);
+     }
 }
 body {
      overflow-x: hidden;

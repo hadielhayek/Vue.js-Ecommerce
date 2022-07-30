@@ -17,6 +17,9 @@
                </div>
           </div>
      </section>
+     <div class="marquee">
+          <div class="slider"></div>
+     </div>
 </template>
 
 <script setup lang="ts"></script>
