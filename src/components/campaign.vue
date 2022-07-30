@@ -17,7 +17,7 @@
                </div>
           </div>
      </section>
-     
+
      <div class="marquee">
           <div class="span_slider">
                <h1 class="span_slider_wrap">
@@ -34,7 +34,7 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .campaign {
      @include flex(space-between, center);
      @include media("<=tablet") {
@@ -103,8 +103,8 @@
 .marquee {
      background: $black-bg;
      padding: 2rem 1rem;
-     @include media("<=phone-tab"){
-        padding: 1.5rem 1rem;
+     @include media("<=phone-tab") {
+          padding: 1.5rem 1rem;
      }
      .span_slider {
           @include flex(space-between, center);
