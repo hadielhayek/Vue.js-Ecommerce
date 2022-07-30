@@ -11,4 +11,17 @@
      gap: $gap;
 }
 
+@mixin btn($bg){
+   button{
+     background-color: $bg;
+     padding: 1rem 2.3rem;
+     border-radius: 5rem;
+   outline: none;
+   cursor: pointer;
+   font-weight: bolder;
+   border: none;
+   font-size: 1.1em;
+   font-family: inherit;
+   }
+}
 @import "./breakpoints.scss";

@@ -24,9 +24,10 @@
 <style lang="scss">
 .campaign {
      @include flex(space-between, center);
+    height: 45rem;
      .cmp{
         width: 50%;
-        height: 35rem;
+        height: 100%;
         @include flex(center, center);
         &:nth-child(1){
               background: $croc-green;
@@ -36,6 +37,9 @@
                 p{
                     width: 80%;
                 }
+                .btn{
+                    @include btn($pale-orange);
+                }
               }
         }
         &:nth-child(2){
@@ -43,8 +47,9 @@
             border-left: 2px solid black;
             .sect_2{
                   @include flex(center, center);
+                  padding: 2rem 0;
                 .img_cont{
-                    width:26rem;
+                    width:27rem;
                     img{
                         width: 100%;
                     }
