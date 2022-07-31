@@ -34,19 +34,31 @@ import croce from "@/db/croce.json";
 <style lang="scss" scoped>
 .arrivals {
      padding: 4rem 0px;
-     background: #f4fcff;
+     overflow-x: hidden;
+     background: #fefced;
      border-bottom: 4px solid black;
      &_wrap {
           @include flex_col(4.5rem 0);
           text-align: center;
           &_filters {
                @extend %flex_r;
+               gap: 0 1.3rem;
+               overflow: visible;
+               -webkit-overflow-scrolling: touch;
+               @include media("<=phone-tab") {
+                    gap: 0 0.7rem;
+               }
                &_item {
                     font-size: 2.18rem;
                     border-radius: 20rem;
                     padding: 0.5rem 1.5rem;
                     font-family: "Athletic Medium";
+                    white-space: nowrap;
                     border: 0.2rem solid black;
+                    @include media("<=phone-tab") {
+                         font-size: 1.1em;
+                         padding: 0.3rem 0.8rem;
+                    }
                     &:nth-child(1) {
                          background: black;
                          color: white;
@@ -55,38 +67,38 @@ import croce from "@/db/croce.json";
           }
           &_croce {
                @include flex(space-around, center);
-               @include media("<=tablet"){
-                   display: grid;
-                   gap: 4rem 0;
-                   grid-template-columns: repeat(2, auto);
+               @include media("<=tablet") {
+                    display: grid;
+                    gap: 4rem 1rem;
+                    grid-template-columns: repeat(2, auto);
                }
                &_item {
                     @include flex_col(1.2rem 0);
-                    @include media("<=phone-tab"){
-                        gap:.8rem 0px;
-                    };
+                    @include media("<=phone-tab") {
+                         gap: 0.8rem 0px;
+                    }
                     .img {
                          position: relative;
                          .star {
                               width: 16rem;
-                              @include media("<=phone-tab"){
-                                width: 10rem;
+                              @include media("<=phone-tab") {
+                                   width: 11rem;
                               }
                          }
                          .croc_shuu {
                               position: absolute;
-                              left: 17%;
+                              left: 20%;
                               width: 11rem;
                               top: 25%;
-                               @include media("<=phone-tab"){
-                                width: 7rem;
+                              @include media("<=phone-tab") {
+                                   width: 7rem;
                               }
                          }
                     }
                     p {
                          font-size: 1.9em;
-                         @include media("<=phone-tab"){
-                            font-size: 1.2em;
+                         @include media("<=phone-tab") {
+                              font-size: 1.2em;
                          }
                     }
                     ._price {
@@ -97,8 +109,8 @@ import croce from "@/db/croce.json";
           .btn {
                @include btn($black-bg, white);
                padding-bottom: 1rem;
-               @include media("<=phone-tab"){
-                   padding-bottom: 0;
+               @include media("<=phone-tab") {
+                    padding-bottom: 0;
                }
           }
      }

@@ -23,6 +23,9 @@
           border: none;
           font-size: 1.5em;
           font-family: "Athletic Bold";
+          @include media("<=phone-tab") {
+               font-size: 1.3em;
+          }
      }
 }
 @import "./breakpoints.scss";

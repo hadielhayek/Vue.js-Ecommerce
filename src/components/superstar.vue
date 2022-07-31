@@ -1,13 +1,7 @@
 <template>
-   <section class="superstar">
-
-   </section>
+     <section class="superstar"></section>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>
