@@ -14,16 +14,16 @@
                     <div v-for="crocs in croce" :key="crocs.id" class="arrivals_wrap_croce_item">
                          <div class="img">
                               <img class="star" :src="require(`@/assets/Star${crocs.id}.svg`)" alt="" />
-                              <img class="croc_shuu" :src="require(`@/assets/croc${crocs.id}.svg`)" alt="">
+                              <img class="croc_shuu" :src="require(`@/assets/croc${crocs.id}.svg`)" alt="" />
                          </div>
                          <p>{{ crocs.name }}</p>
                          <p class="_price">${{ crocs.price }}</p>
                     </div>
                </div>
                <div class="btn">
-                <button>See All</button>
-                     <br>
-                     <br>
+                    <button>See All</button>
+                    <br />
+                    <br />
                </div>
           </div>
      </section>
@@ -37,6 +37,7 @@ import croce from "@/db/croce.json";
 .arrivals {
      padding: 4rem 0px;
      background: #f4fcff;
+     border-bottom: 4px solid black;
      &_wrap {
           @include flex_col(4.5rem 0);
           text-align: center;
@@ -58,16 +59,16 @@ import croce from "@/db/croce.json";
                @include flex(space-around, center);
                &_item {
                     @include flex_col(1.2rem 0);
-                    .img { 
+                    .img {
                          position: relative;
-                         .star{
-                               width: 16rem;
+                         .star {
+                              width: 16rem;
                          }
-                         .croc_shuu{
-                            position: absolute;
-                            left: 17%;
-                            width: 11rem;
-                            top: 25%;
+                         .croc_shuu {
+                              position: absolute;
+                              left: 17%;
+                              width: 11rem;
+                              top: 25%;
                          }
                     }
                     p {
@@ -78,8 +79,8 @@ import croce from "@/db/croce.json";
                     }
                }
           }
-          .btn{
-            @include btn($black-bg, white);
+          .btn {
+               @include btn($black-bg, white);
           }
      }
 }
