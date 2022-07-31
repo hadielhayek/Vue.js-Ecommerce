@@ -41,31 +41,31 @@
           @include flex_col(0rem);
      }
      @include split($croc-green, $pale-orange);
-     .cmp {
-          height: 45rem;
-          &:nth-child(1) {
-               .sect_1 {
-                    @include flex_col(2rem);
-                    p {
-                         width: 100%;
-                    }
-                    .btn {
-                         @include btn($pale-orange, black);
-                    }
+}
+.cmp {
+     height: 45rem;
+     &:nth-child(1) {
+          .sect_1 {
+               @include flex_col(2rem);
+               p {
+                    width: 100%;
+               }
+               .btn {
+                    @include btn($pale-orange, black);
                }
           }
-          &:nth-child(2) {
-               background: $pale-orange;
-               .sect_2 {
-                    @include flex(center, center);
-                    .img_cont {
-                         width: 27rem;
-                         @include media("<=phone") {
-                              width: 20rem;
-                         }
-                         img {
-                              width: 100%;
-                         }
+     }
+     &:nth-child(2) {
+          background: $pale-orange;
+          .sect_2 {
+               @include flex(center, center);
+               .img_cont {
+                    width: 27rem;
+                    @include media("<=phone") {
+                         width: 20rem;
+                    }
+                    img {
+                         width: 100%;
                     }
                }
           }

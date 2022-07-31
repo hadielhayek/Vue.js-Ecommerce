@@ -13,10 +13,20 @@
      </section>
      <div class="p_superstar">
           <div class="cmp">
-               <h2>Saweetie Sweet Croocs</h2>
+               <div class="sect_1 sect">
+                    <h2>Saweetie Sweet Croocs</h2>
+                    <div class="img">
+                         <img src="@/assets/sa1.svg" alt="" />
+                    </div>
+               </div>
           </div>
           <div class="cmp">
-               <h2>Salene Bembury Croocs</h2>
+               <div class="sect_2 sect">
+                    <h2>Salene Bembury Croocs</h2>
+                    <div class="img">
+                         <img src="@/assets/sa2.svg" alt="" />
+                    </div>
+               </div>
           </div>
      </div>
 </template>
@@ -56,6 +66,21 @@
      }
 }
 .p_superstar {
-   @include split(#FF89F1, #A473FF);
+     @extend %borderb;
+     @include split(#ff89f1, #a473ff);
+     .cmp {
+          padding: 3rem;
+          text-align: center;
+          height: auto;
+          .sect {
+               @include flex_col(2rem);
+               .img {
+                    width: 30%;
+                    img {
+                         width: 100%;
+                    }
+               }
+          }
+     }
 }
 </style>
