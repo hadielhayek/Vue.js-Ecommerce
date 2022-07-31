@@ -28,7 +28,16 @@ h1 {
           line-height: 3.6rem;
      }
 }
-
+h2 {
+     font-size: 3rem;
+     line-height: 6rem;
+     font-weight: 900;
+     font-family: "Athletic Bold";
+     @include media("<=phone-tab") {
+          font-size: 2.1em;
+          line-height: 3.6rem;
+     }
+}
 section {
      width: 100%;
 }

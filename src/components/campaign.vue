@@ -40,24 +40,10 @@
      @include media("<=tablet") {
           @include flex_col(0rem);
      }
+     @include split($croc-green, $pale-orange);
      .cmp {
-          width: 50%;
           height: 45rem;
-          @include flex(center, center);
-          @include media("<=tablet") {
-               width: 100%;
-               height: auto;
-               padding: 3rem 0;
-          }
           &:nth-child(1) {
-               background: $croc-green;
-               border-right: 2px solid black;
-               @include media("<=tablet") {
-                    border: {
-                         right: none;
-                         bottom: 1px solid black;
-                    }
-               }
                .sect_1 {
                     @include flex_col(2rem);
                     p {
@@ -70,14 +56,6 @@
           }
           &:nth-child(2) {
                background: $pale-orange;
-               border-left: 2px solid black;
-
-               @include media("<=tablet") {
-                    border: {
-                         top: 1px solid black;
-                         left: none;
-                    }
-               }
                .sect_2 {
                     @include flex(center, center);
                     .img_cont {
@@ -90,10 +68,6 @@
                          }
                     }
                }
-          }
-          & > div {
-               width: 90%;
-               margin: 0 auto;
           }
      }
 }

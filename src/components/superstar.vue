@@ -11,6 +11,14 @@
                </div>
           </div>
      </section>
+     <div class="p_superstar">
+          <div class="cmp">
+               <h2>Saweetie Sweet Croocs</h2>
+          </div>
+          <div class="cmp">
+               <h2>Salene Bembury Croocs</h2>
+          </div>
+     </div>
 </template>
 
 <script setup lang="ts"></script>
@@ -46,5 +54,8 @@
                }
           }
      }
+}
+.p_superstar {
+   @include split(#FF89F1, #A473FF);
 }
 </style>

@@ -1,3 +1,4 @@
+@import "./breakpoints.scss";
 @mixin flex($jc, $ai) {
      display: flex;
      justify-content: $jc;
@@ -28,4 +29,44 @@
           }
      }
 }
-@import "./breakpoints.scss";
+@mixin split($col1, $col2){
+     @include flex(space-between, center);
+     @include media("<=tablet") {
+          @include flex_col(0rem);
+     }
+  .cmp{
+     width: 50%;
+     @include flex(center, center);
+     @include media("<=tablet") {
+          width: 100%;
+          height: auto;
+          padding: 3rem 0;
+     }
+     &:nth-child(1) {
+          background: $col1;
+          border-right: 2px solid black;
+          @include media("<=tablet") {
+               border: {
+                    right: none;
+                    bottom: 1px solid black;
+               }
+          }
+     }
+     &:nth-child(2) {
+          background: $col2;
+          border-left: 2px solid black;
+          @include media("<=tablet") {
+               border: {
+                    top: 1px solid black;
+                    left: none;
+               }
+          }
+     }
+     & > div {
+          width: 90%;
+          margin: 0 auto;
+     }
+     @content;
+  }
+}
+
