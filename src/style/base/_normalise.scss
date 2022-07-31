@@ -25,7 +25,7 @@ h1 {
      font-family: "Athletic Bold";
      @include media("<=phone-tab") {
           font-size: 3em;
-          line-height: 4rem;
+          line-height: 3.6rem;
      }
 }
 section {

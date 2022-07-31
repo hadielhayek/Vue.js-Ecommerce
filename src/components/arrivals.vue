@@ -22,8 +22,6 @@
                </div>
                <div class="btn">
                     <button>See All</button>
-                    <br />
-                    <br />
                </div>
           </div>
      </section>
@@ -57,22 +55,39 @@ import croce from "@/db/croce.json";
           }
           &_croce {
                @include flex(space-around, center);
+               @include media("<=tablet"){
+                   display: grid;
+                   gap: 4rem 0;
+                   grid-template-columns: repeat(2, auto);
+               }
                &_item {
                     @include flex_col(1.2rem 0);
+                    @include media("<=phone-tab"){
+                        gap:.8rem 0px;
+                    };
                     .img {
                          position: relative;
                          .star {
                               width: 16rem;
+                              @include media("<=phone-tab"){
+                                width: 10rem;
+                              }
                          }
                          .croc_shuu {
                               position: absolute;
                               left: 17%;
                               width: 11rem;
                               top: 25%;
+                               @include media("<=phone-tab"){
+                                width: 7rem;
+                              }
                          }
                     }
                     p {
                          font-size: 1.9em;
+                         @include media("<=phone-tab"){
+                            font-size: 1.2em;
+                         }
                     }
                     ._price {
                          color: #0f0e10a8;
@@ -81,6 +96,10 @@ import croce from "@/db/croce.json";
           }
           .btn {
                @include btn($black-bg, white);
+               padding-bottom: 1rem;
+               @include media("<=phone-tab"){
+                   padding-bottom: 0;
+               }
           }
      }
 }
