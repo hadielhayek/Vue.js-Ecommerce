@@ -20,6 +20,11 @@
                          <p class="_price">${{ crocs.price }}</p>
                     </div>
                </div>
+               <div class="btn">
+                <button>See All</button>
+                     <br>
+                     <br>
+               </div>
           </div>
      </section>
 </template>
@@ -28,18 +33,19 @@
 import croce from "@/db/croce.json";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .arrivals {
      padding: 4rem 0px;
      background: #f4fcff;
      &_wrap {
           @include flex_col(4.5rem 0);
+          text-align: center;
           &_filters {
                @extend %flex_r;
                &_item {
-                    font-size: 2.2rem;
+                    font-size: 2.18rem;
                     border-radius: 20rem;
-                    padding: 0.4rem 1.3rem;
+                    padding: 0.5rem 1.5rem;
                     font-family: "Athletic Medium";
                     border: 0.2rem solid black;
                     &:nth-child(1) {
@@ -50,7 +56,6 @@ import croce from "@/db/croce.json";
           }
           &_croce {
                @include flex(space-around, center);
-               text-align: center;
                &_item {
                     @include flex_col(1.2rem 0);
                     .img { 
@@ -72,6 +77,9 @@ import croce from "@/db/croce.json";
                          color: #0f0e10a8;
                     }
                }
+          }
+          .btn{
+            @include btn($black-bg, white);
           }
      }
 }

@@ -61,10 +61,7 @@
                .sect_1 {
                     @include flex_col(2rem);
                     p {
-                         width: 80%;
-                         @include media("<=phone-tab") {
-                              width: 100%;
-                         }
+                         width: 100%;
                     }
                     .btn {
                          @include btn($pale-orange, black);

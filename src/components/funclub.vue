@@ -47,7 +47,7 @@
           .sect_1 {
                @include flex_col(2rem);
                p {
-                    width: 80%;
+                    width: 95%;
                     @include media("<=phone-tab") {
                          width: 100%;
                     }
