@@ -1,6 +1,6 @@
 <template>
      <section class="superstar">
-          <div class="superstar_sza">
+          <div class="superstar_sza contain_wrap">
                <h1>Crocs SuperStar Collab</h1>
                <p>
                     We make the most confortable shoes in the world, and by partnering with some of your favourite celebrities, We bring thier designs
@@ -17,15 +17,33 @@
 
 <style lang="scss" scoped>
 .superstar {
+     background: $red;
+     @extend %borderb;
      &_sza {
-          @extend %borderb;
-          background: $red;
           padding: 3rem 0;
           text-align: center;
-          @include flex_col(1.4rem);
+          @include flex_col(2rem);
+          h1 {
+               @include media("<=phone-tab") {
+                    font-size: 2em !important;
+               }
+          }
           p {
-               width: 70%;
+               width: 75%;
                margin: 0 auto;
+               @include media("<=tablet") {
+                    width: 100%;
+               }
+          }
+          .img {
+               width: 80rem;
+               margin: 0 auto;
+               @include media("<=tablet") {
+                    width: 100%;
+               }
+               img {
+                    width: 100%;
+               }
           }
      }
 }

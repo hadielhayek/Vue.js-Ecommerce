@@ -96,7 +96,7 @@ import croce from "@/db/croce.json";
                          }
                     }
                     p {
-                         font-size: 1.9em;
+                         font-size: 1.5em;
                          @include media("<=phone-tab") {
                               font-size: 1.2em;
                          }
