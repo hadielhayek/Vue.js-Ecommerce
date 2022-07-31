@@ -25,7 +25,8 @@
           font-size: 1.5em;
           font-family: "Athletic Bold";
           @include media("<=phone-tab") {
-               font-size: 1.3em;
+               font-size: 1.2em;
+               padding: 1rem 2.4rem;
           }
      }
 }

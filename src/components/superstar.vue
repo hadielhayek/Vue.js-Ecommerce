@@ -18,7 +18,7 @@
                     <div class="img">
                          <img src="@/assets/sa1.svg" alt="" />
                          <div class="btn">
-                            <button>Shop Crocs</button>
+                              <button>Shop Crocs</button>
                          </div>
                     </div>
                </div>
@@ -29,7 +29,7 @@
                     <div class="img">
                          <img src="@/assets/sa2.svg" alt="" />
                          <div class="btn">
-                            <button>Shop Crocs</button>
+                              <button>Shop Crocs</button>
                          </div>
                     </div>
                </div>
@@ -81,6 +81,13 @@
      .sect {
           @include flex_col(2rem);
           .img {
+               position: relative;
+               .btn {
+                    @include btn($black-txt, white);
+                    top: 77%;
+                    left: 25%;
+                    position: absolute;
+               }
                height: 34rem;
                align-items: flex-end;
                margin: 0 auto;
