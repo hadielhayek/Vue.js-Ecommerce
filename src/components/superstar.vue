@@ -14,17 +14,23 @@
      <div class="p_superstar">
           <div class="cmp">
                <div class="sect_1 sect">
-                    <h2>Saweetie Sweet Croocs</h2>
+                    <h2>Saweetie Sweet Crocs</h2>
                     <div class="img">
                          <img src="@/assets/sa1.svg" alt="" />
+                         <div class="btn">
+                            <button>Shop Crocs</button>
+                         </div>
                     </div>
                </div>
           </div>
           <div class="cmp">
                <div class="sect_2 sect">
-                    <h2>Salene Bembury Croocs</h2>
+                    <h2>Salene Bembury Crocs</h2>
                     <div class="img">
                          <img src="@/assets/sa2.svg" alt="" />
+                         <div class="btn">
+                            <button>Shop Crocs</button>
+                         </div>
                     </div>
                </div>
           </div>
@@ -70,15 +76,23 @@
      @include split(#ff89f1, #a473ff);
 }
 .cmp {
-     padding: 3rem;
+     height: 50rem;
      text-align: center;
-     height: auto;
      .sect {
           @include flex_col(2rem);
           .img {
-               width: 30%;
-               img {
+               height: 34rem;
+               align-items: flex-end;
+               margin: 0 auto;
+               @include media("<=phone-tab") {
+                    height: auto;
                     width: 100%;
+               }
+               img {
+                    height: 100%;
+                    @include media("<=phone-tab") {
+                         width: 100%;
+                    }
                }
           }
      }
