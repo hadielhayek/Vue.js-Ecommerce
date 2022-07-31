@@ -5,6 +5,7 @@
 }
 html {
      scroll-behavior: smooth;
+     overflow-x: hidden;
      font-size: calc(100vw / 1440 * 16);
 
      @include media("<=tablet") {
@@ -15,7 +16,6 @@ html {
      }
 }
 body {
-     overflow-x: hidden;
      font-family: "Athletic";
 }
 h1 {

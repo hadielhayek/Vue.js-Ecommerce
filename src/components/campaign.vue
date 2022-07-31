@@ -103,6 +103,7 @@
 .marquee {
      background: $black-bg;
      padding: 2rem 1rem;
+     overflow: hidden;
      @include media("<=phone-tab") {
           padding: 1.5rem 1rem;
      }
