@@ -21,12 +21,12 @@
      <div class="marquee">
           <div class="span_slider">
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
+                    <div class="_p span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
                </h1>
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;<sup>.</sup></div>
+                    <div class="_p span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
                </h1>
           </div>
      </div>
@@ -102,7 +102,7 @@
      padding: 2rem 1rem;
      overflow: hidden;
      @include media("<=phone-tab") {
-          padding: 1.5rem 1rem;
+          padding: 1rem 1rem;
      }
      .span_slider {
           @include flex(space-between, center);
@@ -114,6 +114,9 @@
                gap: 0 1rem;
                overflow: visible;
                flex-shrink: 0;
+               @include media("<=phone-tab") {
+                    font-size: 2em !important;
+               }
                &_txt {
                     @include flex(space-between, center);
                }

@@ -19,7 +19,7 @@ body {
      font-family: "Athletic";
 }
 h1 {
-     font-size: 5.4rem;
+     font-size: 5rem;
      line-height: 6rem;
      font-weight: 900;
      font-family: "Athletic Bold";
@@ -28,11 +28,12 @@ h1 {
           line-height: 3.6rem;
      }
 }
+
 section {
      width: 100%;
 }
 p {
-     font-size: 1.5em;
+     font-size: 1.3em;
      line-height: 1.4em;
      font-weight: lighter;
      @include media("<=phone-tab") {

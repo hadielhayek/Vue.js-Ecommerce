@@ -14,14 +14,14 @@
 @mixin btn($bg, $col) {
      button {
           background-color: $bg;
-          padding: 1.3rem 2.8rem;
+          padding: 1rem 2.4rem;
           border-radius: 5rem;
           outline: none;
           font-weight: 900;
           color: $col !important;
           cursor: pointer;
           border: none;
-          font-size: 1.5em;
+          font-size: 1.3em;
           font-family: "Athletic Bold";
           @include media("<=phone-tab") {
                font-size: 1.3em;

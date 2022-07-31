@@ -36,7 +36,7 @@ import croce from "@/db/croce.json";
      padding: 4rem 0px;
      overflow-x: hidden;
      background: #fefced;
-     border-bottom: 4px solid black;
+     @extend %borderb;
      &_wrap {
           @include flex_col(4.5rem 0);
           text-align: center;
@@ -49,7 +49,7 @@ import croce from "@/db/croce.json";
                     gap: 0 0.7rem;
                }
                &_item {
-                    font-size: 2.18rem;
+                    font-size: 2rem;
                     border-radius: 20rem;
                     padding: 0.5rem 1.5rem;
                     font-family: "Athletic Medium";
