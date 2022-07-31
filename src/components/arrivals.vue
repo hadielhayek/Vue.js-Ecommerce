@@ -13,7 +13,8 @@
                <div class="arrivals_wrap_croce">
                     <div v-for="crocs in croce" :key="crocs.id" class="arrivals_wrap_croce_item">
                          <div class="img">
-                              <img :src="require(`@/assets/Star${crocs.id}.svg`)" alt="" />
+                              <img class="star" :src="require(`@/assets/Star${crocs.id}.svg`)" alt="" />
+                              <img class="croc_shuu" :src="require(`@/assets/croc${crocs.id}.svg`)" alt="">
                          </div>
                          <p>{{ crocs.name }}</p>
                          <p class="_price">${{ crocs.price }}</p>
@@ -29,16 +30,16 @@ import croce from "@/db/croce.json";
 
 <style lang="scss">
 .arrivals {
-     padding: 3rem 0px;
+     padding: 4rem 0px;
      background: #f4fcff;
      &_wrap {
-          @include flex_col(5rem 0);
+          @include flex_col(4.5rem 0);
           &_filters {
                @extend %flex_r;
                &_item {
-                    font-size: 2.3rem;
+                    font-size: 2.2rem;
                     border-radius: 20rem;
-                    padding: 0.5rem 1.3rem;
+                    padding: 0.4rem 1.3rem;
                     font-family: "Athletic Medium";
                     border: 0.2rem solid black;
                     &:nth-child(1) {
@@ -52,14 +53,20 @@ import croce from "@/db/croce.json";
                text-align: center;
                &_item {
                     @include flex_col(1.2rem 0);
-                    .img {
-                         width: 15rem;
-                         img {
-                              width: 100%;
+                    .img { 
+                         position: relative;
+                         .star{
+                               width: 16rem;
+                         }
+                         .croc_shuu{
+                            position: absolute;
+                            left: 17%;
+                            width: 11rem;
+                            top: 25%;
                          }
                     }
                     p {
-                         font-size: 1.7em;
+                         font-size: 1.9em;
                     }
                     ._price {
                          color: #0f0e10a8;
