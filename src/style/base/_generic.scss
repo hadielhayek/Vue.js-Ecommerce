@@ -2,12 +2,3 @@
      width: 95%;
      margin: 0 auto;
 }
-.cmp {
-     width: 50%;
-     @include flex(center, center);
-     @include media("<=tablet") {
-          width: 100%;
-          height: auto;
-          padding: 3rem 0;
-     }
-}
