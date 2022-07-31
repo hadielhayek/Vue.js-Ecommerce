@@ -68,17 +68,17 @@
 .p_superstar {
      @extend %borderb;
      @include split(#ff89f1, #a473ff);
-     .cmp {
-          padding: 3rem;
-          text-align: center;
-          height: auto;
-          .sect {
-               @include flex_col(2rem);
-               .img {
-                    width: 30%;
-                    img {
-                         width: 100%;
-                    }
+}
+.cmp {
+     padding: 3rem;
+     text-align: center;
+     height: auto;
+     .sect {
+          @include flex_col(2rem);
+          .img {
+               width: 30%;
+               img {
+                    width: 100%;
                }
           }
      }
