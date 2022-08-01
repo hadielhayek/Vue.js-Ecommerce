@@ -8,6 +8,9 @@
                </p>
                <div class="img">
                     <img src="@/assets/sza.svg" alt="" />
+                    <div class="btn">
+                         <button>Shop Crocs</button>
+                    </div>
                </div>
           </div>
      </section>
@@ -62,6 +65,21 @@
           .img {
                width: 80rem;
                margin: 0 auto;
+               position: relative;
+               .btn {
+                    @include btn($red, black);
+                    top: 77%;
+                    left: 40%;
+                    position: absolute;
+                    @include media("<=tablet") {
+                         left: 35%;
+                         top: 70%;
+                    }
+                    @include media("<=phone-tab") {
+                         left: 26%;
+                         top: 60%;
+                    }
+               }
                @include media("<=tablet") {
                     width: 100%;
                }

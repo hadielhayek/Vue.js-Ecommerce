@@ -3,12 +3,12 @@
      <Campaign />
      <Arrival />
      <Supe />
-     <Download/>
+     <Download />
      <Cfc />
 </template>
 
 <script setup lang="ts">
-import Download from "./components/getapp.vue"
+import Download from "./components/getapp.vue";
 // import landing from "./components/landing.vue"
 import Arrival from "./components/arrivals.vue";
 import Supe from "./components/superstar.vue";
