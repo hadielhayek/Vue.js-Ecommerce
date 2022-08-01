@@ -25,13 +25,33 @@
      text-align: center;
      background-color: #0b0b0b;
      &_wrap {
-          @include flex_col(1rem);
+          @include flex_col(1.5rem);
           h1 {
                color: white;
           }
           &_icons {
                @include flex(center, center) {
-                    gap: 0 1.8rem;
+                    gap: 0 2rem;
+               }
+               .img {
+                    width: 10rem;
+                    @include media("<=phone-tab") {
+                         width: 9rem;
+                    }
+                    img {
+                         width: 100%;
+                    }
+               }
+          }
+          .sha256 {
+               padding-top: 1rem;
+               width: 30rem;
+               margin: 0 auto;
+               @include media("<=phone-tab") {
+                    width: 100%;
+               }
+               img {
+                    width: 100%;
                }
           }
      }
