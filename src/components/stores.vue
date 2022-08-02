@@ -22,27 +22,40 @@
      background: #a259ff;
      padding: 4rem 0px;
      &_wrap {
-          display: flex;
-          align-items: center;
+          @extend %flex_r;
+          @include media("<=tablet") {
+               @include flex_col(4rem);
+               align-items: flex-start;
+          }
           &_txt {
                @include flex_col(2rem);
-               width: 50%;
                color: white;
+               @include media("<=tablet") {
+                    width: 95%;
+               }
 
                p {
                     width: 80%;
+                    @include media("<=tablet") {
+                         width: 100%;
+                    }
                }
                .btn {
                     @include btn($black-txt, white);
                }
           }
           &_img {
-               align-self: flex-end;
-               width: 45%;
+               @include media("<=tablet") {
+                    width: 95%;
+               }
                img {
                     width: 100%;
                     border-radius: 10px;
                     box-shadow: 17px 16px 0px 3px #131313;
+                    @include media("<=tablet") {
+                         border-radius: 0px;
+                         box-shadow: 14px 13px 0px 0px #131313;
+                    }
                }
           }
      }
