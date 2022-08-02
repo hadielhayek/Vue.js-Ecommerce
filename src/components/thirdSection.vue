@@ -7,7 +7,7 @@
          </div>
           <div>
             <h1>Show Us You Love It</h1>
-            <h3>Tag @crocs to be featured here!</h3>
+            <h3>Tag @/crocs to be featured here!</h3>
             <div class="abs">
                <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479414/crooooocs/sui5_mrawad.svg" alt="">
                <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479416/crooooocs/sui6_htrsj2.svg" alt="">
