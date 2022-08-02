@@ -44,7 +44,7 @@ h3 {
      font-weight: 900;
      font-family: "Athletic Bold";
      @include media("<=phone-tab") {
-          font-size: 1.8em;
+          font-size: 1.5em;
           line-height: 2.5rem;
      }
 }
