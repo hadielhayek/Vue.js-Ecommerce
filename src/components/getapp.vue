@@ -21,9 +21,16 @@
 
 <style lang="scss" scoped>
 .app_download {
-     padding-top: 2rem;
+     padding-top: 3rem;
+     background-image: url("../assets/143.svg");
      text-align: center;
      background-color: #0b0b0b;
+     background-size: contain;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     @include media("<=phone-tab") {
+          background-image: none;
+     }
      &_wrap {
           @include flex_col(1.5rem);
           h1 {
@@ -34,7 +41,7 @@
                     gap: 0 2rem;
                }
                .img {
-                    width: 10rem;
+                    width: 13rem;
                     @include media("<=phone-tab") {
                          width: 9rem;
                     }
@@ -45,7 +52,7 @@
           }
           .sha256 {
                padding-top: 1rem;
-               width: 30rem;
+               width: 40rem;
                margin: 0 auto;
                @include media("<=phone-tab") {
                     width: 100%;

@@ -21,6 +21,7 @@
 
 <style lang="scss" scoped>
 .croc_club {
+     @extend %borderb;
      @include flex(space-between, center);
      @include media("<=tablet") {
           @include flex_col(0rem);
