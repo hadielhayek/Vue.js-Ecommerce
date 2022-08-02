@@ -23,6 +23,7 @@
      padding: 4rem 0px;
      &_wrap {
           display: flex;
+          align-items: center;
           &_txt {
                @include flex_col(2rem);
                width: 50%;
@@ -37,9 +38,11 @@
           }
           &_img {
                align-self: flex-end;
-               width: 50%;
+               width: 45%;
                img {
                     width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 17px 16px 0px 3px #131313;
                }
           }
      }
