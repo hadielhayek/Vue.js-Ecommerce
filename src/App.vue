@@ -5,11 +5,13 @@
      <Supe />
      <Download />
      <Cfc />
+     <thirdsect/>
      <Stores />
      <Footer />
 </template>
 
 <script setup lang="ts">
+import thirdsect from "./components/thirdSection.vue"
 import Footer from "./components/footer.vue";
 import Download from "./components/getapp.vue";
 import Stores from "./components/stores.vue";
