@@ -131,6 +131,16 @@
                               display: none;
                          }
                     }
+                    .social_icon{
+                        display: none;
+                        @include media("<=tablet"){
+                            display: flex;
+                        }
+                        gap: 0 1rem;
+                        i{
+                            font-size: 1.5em;
+                        }
+                    }
                }
                .logo_footer {
                     text-align: center;
