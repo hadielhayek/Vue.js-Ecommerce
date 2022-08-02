@@ -112,8 +112,11 @@
                }
           }
           .section2 {
-               @include flex_col(7rem);
-               padding: 3rem 0px;
+               @include flex_col(6rem);
+               padding: 3.5rem 0px;
+               @include media("<=phone-tab"){
+                gap:4rem;
+               }
                &_ul {
                     font-size: 1em;
                     @include flex(space-around, flex-start);
