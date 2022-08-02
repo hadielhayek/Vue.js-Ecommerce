@@ -21,6 +21,5 @@
 <style lang="scss">
 .hero {
      min-height: 100vh;
-     background-image: url("../assets/sash.svg");
 }
 </style>
