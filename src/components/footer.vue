@@ -42,7 +42,7 @@
                               <li>Accessibility</li>
                               <li>Caring for your Crocs</li>
                          </ul>
-                         <ul>
+                         <ul class="socials">
                               <li>FOLLOW US ON ALL SOCIALS</li>
                               <li>Instagram</li>
                               <li>Tik Tok</li>
@@ -51,6 +51,23 @@
                               <li>Youtube</li>
                               <li>Facebook</li>
                          </ul>
+                         <div class="social_icon">
+                              <div class="social_icon_twitter">
+                                   <i class="ai-twitter-fill"></i>
+                              </div>
+                              <div class="social_icon_ig">
+                                   <i class="ai-instagram-fill"></i>
+                              </div>
+                              <div class="social_icon_yt">
+                                   <i class="ai-youtube-fill"></i>
+                              </div>
+                              <div class="social_icon_fb">
+                                   <i class="ai-facebook-fill"></i>
+                              </div>
+                              <div class="social_icon_tiktok">
+                                   <i class="ai-tiktok-fill"></i>
+                              </div>
+                         </div>
                     </div>
                     <div class="logo_footer">
                          <img src="@/assets/footer_logo.svg" alt="" />
@@ -100,10 +117,18 @@
                &_ul {
                     font-size: 1em;
                     @include flex(space-around, flex-start);
+                    @include media("<=tablet") {
+                         @include flex_col(3rem);
+                    }
                     ul {
                          @include flex_col(1rem);
                          li {
                               list-style: none;
+                         }
+                    }
+                    .socials {
+                         @include media("<=tablet") {
+                              display: none;
                          }
                     }
                }
@@ -111,6 +136,9 @@
                     text-align: center;
                     width: 65rem;
                     margin: 0 auto;
+                    @include media("<=tablet") {
+                         width: 100%;
+                    }
                     img {
                          width: 100%;
                     }
