@@ -1,12 +1,14 @@
 <template>
      <div class="footer">
           <div class="footer_wrap">
-               <div class="footer_wrap_email contain_wrap">
-                    <h3>We Let Friends Know About New Products</h3>
-                    <div class="footer_wrap_email--div">
-                         <input type="text" placeholder="Enter Your Email Address" />
-                         <div class="btn">
-                              <button>Submit</button>
+               <div class="inner_div">
+                    <div class="footer_wrap_email contain_wrap">
+                         <h3>We Let Friends Know About New Products</h3>
+                         <div class="footer_wrap_email--div">
+                              <input type="text" placeholder="Enter Your Email Address" />
+                              <div class="btn">
+                                   <button>Submit</button>
+                              </div>
                          </div>
                     </div>
                </div>
@@ -18,6 +20,10 @@
 .footer {
      background: black;
      color: white;
+     .inner_div {
+          border-top: 0.2rem solid white;
+          border-bottom: 0.2rem solid white;
+     }
      &_wrap {
           &_email {
                @extend %flex_r;
