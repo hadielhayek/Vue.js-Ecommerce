@@ -12,6 +12,48 @@
                          </div>
                     </div>
                </div>
+               <div class="contain_wrap">
+                    <div class="footer_wrap_ul">
+                         <ul>
+                              <li>CROCS INSIDERS</li>
+                              <li>Crocs Club</li>
+                              <li>Collaborations & Limited Editions</li>
+                              <li>Student Discount</li>
+                              <li>Teacher Discount</li>
+                              <li>Military Discount</li>
+                              <li>Healthcare Discount</li>
+                              <li>Affiliate Program</li>
+                              <li>Gift Cards</li>
+                         </ul>
+                         <ul>
+                              <li>COMPANY</li>
+                              <li>About Crocs</li>
+                              <li>Crocs Purpose</li>
+                              <li>Careers</li>
+                              <li>Investor Relations</li>
+                              <li>Custom Orders</li>
+                              <li>Wholesale Inquiries</li>
+                         </ul>
+                         <ul>
+                              <li>HELP</li>
+                              <li>Order Status & Returns</li>
+                              <li>FAQs</li>
+                              <li>Size Chart</li>
+                              <li>Accessibility</li>
+                              <li>Caring for your Crocs</li>
+                         </ul>
+                         <ul>
+                              <li>FOLLOW US ON ALL SOCIALS</li>
+                              <li>Instagram</li>
+                              <li>Tik Tok</li>
+                              <li>Pintrest</li>
+                              <li>twitter</li>
+                              <li>Youtube</li>
+                              <li>Facebook</li>
+                         </ul>
+                    </div>
+                    <div class="logo_footer"></div>
+               </div>
           </div>
      </div>
 </template>
@@ -47,6 +89,17 @@
                     .btn {
                          @include btn($croc-green, white);
                          align-self: flex-end;
+                    }
+               }
+          }
+          &_ul {
+               padding: 3rem 0px;
+               font-size: 1em;
+               @include flex(space-around, flex-start);
+               ul {
+                    @include flex_col(1rem);
+                    li {
+                         list-style: none;
                     }
                }
           }
