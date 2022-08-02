@@ -23,7 +23,9 @@
                @extend %flex_r;
                padding: 2rem 0px;
                &--div {
-                    width: 23rem;
+                  background: white;
+                  padding: 1rem;
+                  border-radius: 20px;
                }
           }
      }
