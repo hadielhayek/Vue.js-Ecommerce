@@ -12,8 +12,8 @@
                          </div>
                     </div>
                </div>
-               <div class="contain_wrap">
-                    <div class="footer_wrap_ul">
+               <div class="section2 contain_wrap">
+                    <div class="section2_ul">
                          <ul>
                               <li>CROCS INSIDERS</li>
                               <li>Crocs Club</li>
@@ -52,7 +52,9 @@
                               <li>Facebook</li>
                          </ul>
                     </div>
-                    <div class="logo_footer"></div>
+                    <div class="logo_footer">
+                         <img src="@/assets/footer_logo.svg" alt="" />
+                    </div>
                </div>
           </div>
      </div>
@@ -92,14 +94,25 @@
                     }
                }
           }
-          &_ul {
+          .section2 {
+               @include flex_col(7rem);
                padding: 3rem 0px;
-               font-size: 1em;
-               @include flex(space-around, flex-start);
-               ul {
-                    @include flex_col(1rem);
-                    li {
-                         list-style: none;
+               &_ul {
+                    font-size: 1em;
+                    @include flex(space-around, flex-start);
+                    ul {
+                         @include flex_col(1rem);
+                         li {
+                              list-style: none;
+                         }
+                    }
+               }
+               .logo_footer {
+                    text-align: center;
+                    width: 65rem;
+                    margin: 0 auto;
+                    img {
+                         width: 100%;
                     }
                }
           }
