@@ -7,7 +7,7 @@
                     and style to you in incredable confort.
                </p>
                <div class="img">
-                    <img src="@/assets/sza.svg" alt="" />
+                    <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480492/crooooocs/sza_vbdeyc.svg" alt="" />
                     <div class="btn">
                          <button>Shop Crocs</button>
                     </div>
@@ -19,7 +19,7 @@
                <div class="sect_1 sect">
                     <h2>Saweetie Sweet Crocs</h2>
                     <div class="img">
-                         <img src="@/assets/sa1.svg" alt="" />
+                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480334/crooooocs/sa1_gedk17.svg" alt="" />
                          <div class="btn">
                               <button>Shop Crocs</button>
                          </div>
@@ -30,7 +30,7 @@
                <div class="sect_2 sect">
                     <h2>Salene Bembury Crocs</h2>
                     <div class="img">
-                         <img src="@/assets/sa2.svg" alt="" />
+                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479416/crooooocs/sa2_njkafp.svg" alt="" />
                          <div class="btn">
                               <button>Shop Crocs</button>
                          </div>

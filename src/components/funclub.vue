@@ -12,7 +12,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img_cont">
-                         <img src="@/assets/croocs_2.svg" alt="" />
+                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480171/crooooocs/croocs_2_c4tady.svg" alt="" />
                     </div>
                </div>
           </div>

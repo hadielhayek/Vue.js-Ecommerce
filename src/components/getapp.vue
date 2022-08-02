@@ -4,14 +4,14 @@
                <h1>Get The Crocs App</h1>
                <div class="app_download_wrap_icons">
                     <div class="img">
-                         <img src="@/assets/appstore.svg" alt="" />
+                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479461/crooooocs/appstore_mniamk.svg" alt="" />
                     </div>
                     <div class="img">
-                         <img src="@/assets/playstore.svg" alt="" />
+                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479422/crooooocs/playstore_xtmcgc.svg" alt="" />
                     </div>
                </div>
                <div class="sha256">
-                    <img src="@/assets/download_1433.svg" alt="" />
+                    <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480255/crooooocs/download_1433_ve65se.svg" alt="" />
                </div>
           </div>
      </section>
@@ -22,7 +22,7 @@
 <style lang="scss" scoped>
 .app_download {
      padding-top: 3rem;
-     background-image: url("../assets/143.svg");
+     background-image: url("https://res.cloudinary.com/ferventdev/image/upload/v1659479474/crooooocs/143_y3plpw.svg");
      text-align: center;
      background-color: #0b0b0b;
      background-size: contain;

@@ -9,7 +9,7 @@
                     </div>
                </div>
                <div class="stores_wrap_img">
-                    <img src="@/assets/stores.svg" alt="" />
+                    <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479414/crooooocs/stores_kfmkvk.svg" alt="" />
                </div>
           </div>
      </div>
