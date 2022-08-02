@@ -6,9 +6,11 @@
      <Download />
      <Cfc />
      <Stores />
+     <Footer />
 </template>
 
 <script setup lang="ts">
+import Footer from "./components/footer.vue";
 import Download from "./components/getapp.vue";
 import Stores from "./components/stores.vue";
 // import landing from "./components/landing.vue"
