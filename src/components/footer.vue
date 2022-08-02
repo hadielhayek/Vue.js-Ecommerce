@@ -28,6 +28,10 @@
           &_email {
                @extend %flex_r;
                padding: 2rem 0px;
+               @include media("<=tablet") {
+                    @include flex_col(3rem);
+                    align-items: flex-start;
+               }
                &--div {
                     background: white;
                     padding: 0.7rem 2rem;
@@ -36,6 +40,9 @@
                     gap: 0 1rem;
                     input {
                          width: 19rem;
+                         @include media("<=tablet") {
+                              width: 100%;
+                         }
                     }
                     .btn {
                          @include btn($croc-green, white);

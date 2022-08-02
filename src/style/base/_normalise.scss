@@ -66,6 +66,10 @@ input {
      font-size: 1.4em;
      width: 100%;
      font-family: "Athletic Bold";
+     @include media("<=phone-tab") {
+          font-size: 1.2em;
+          line-height: 2rem;
+     }
 }
 ::-webkit-scrollbar {
      display: none;
