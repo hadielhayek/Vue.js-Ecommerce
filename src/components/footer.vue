@@ -114,8 +114,8 @@
           .section2 {
                @include flex_col(6rem);
                padding: 3.5rem 0px;
-               @include media("<=phone-tab"){
-                gap:4rem;
+               @include media("<=phone-tab") {
+                    gap: 4rem;
                }
                &_ul {
                     font-size: 1em;
@@ -134,15 +134,15 @@
                               display: none;
                          }
                     }
-                    .social_icon{
-                        display: none;
-                        @include media("<=tablet"){
-                            display: flex;
-                        }
-                        gap: 0 1rem;
-                        i{
-                            font-size: 1.5em;
-                        }
+                    .social_icon {
+                         display: none;
+                         @include media("<=tablet") {
+                              display: flex;
+                         }
+                         gap: 0 1rem;
+                         i {
+                              font-size: 1.5em;
+                         }
                     }
                }
                .logo_footer {

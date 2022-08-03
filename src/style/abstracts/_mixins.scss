@@ -3,6 +3,12 @@
      display: flex;
      justify-content: $jc;
      align-items: $ai;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     -webkit-justify-content: $jc;
      @content;
 }
 
@@ -10,6 +16,11 @@
      display: flex;
      flex-direction: column;
      gap: $gap;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
 }
 
 @mixin btn($bg, $col) {
@@ -29,6 +40,7 @@
                padding: 1rem 2.4rem;
           }
      }
+     @content;
 }
 @mixin split($col1, $col2) {
      @include flex(space-between, center);
