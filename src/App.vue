@@ -15,7 +15,7 @@ import thirdsect from "./components/thirdSection.vue";
 import Footer from "./components/footer.vue";
 import Download from "./components/getapp.vue";
 import Stores from "./components/stores.vue";
-// import landing from "./components/landing.vue"
+import landing from "./components/landing.vue";
 import Arrival from "./components/arrivals.vue";
 import Supe from "./components/superstar.vue";
 import Campaign from "./components/campaign.vue";
