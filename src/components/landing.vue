@@ -20,6 +20,12 @@
                <div class="btn">
                     <button>Sign Up</button>
                </div>
+               <div class="menu_btn">
+                    <div class="buttons">
+                         <span></span>
+                         <span></span>
+                    </div>
+               </div>
           </header>
           <div class="hero_ctnt">
                <h1>
@@ -148,7 +154,26 @@
      header {
           @extend %flex_r;
           padding: 2rem 0px;
-
+          .menu_btn {
+               display: none;
+               @include media("<=tablet") {
+                    display: block;
+               }
+               .buttons {
+                    span {
+                         border-radius: 10rem;
+                         margin: 6px 0;
+                         width: 45px;
+                         display: block;
+                         height: 5px;
+                         background: #2b3451;
+                         @include media("<=phone-tab") {
+                              height: 3px;
+                              width: 32px;
+                         }
+                    }
+               }
+          }
           .logo {
                width: 9rem;
                @include media("<=phone-tab") {
