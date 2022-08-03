@@ -103,4 +103,12 @@
           }
      }
 }
+@keyframes marquee{
+     0%{
+          transform: translate(0);
+     }
+     100%{
+          transform: translateX(50%);
+     }
+}
 </style>

@@ -8,7 +8,7 @@
                </p>
                <div class="img">
                     <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480492/crooooocs/sza_vbdeyc.svg" alt="" />
-                    <img src="@/assets/Star12.svg" alt="" />
+                    <img src="@/assets/star12.svg" alt="" />
                     <div class="btn">
                          <button>Shop Crocs</button>
                     </div>
