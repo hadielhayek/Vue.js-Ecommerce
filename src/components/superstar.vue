@@ -8,6 +8,7 @@
                </p>
                <div class="img">
                     <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480492/crooooocs/sza_vbdeyc.svg" alt="" />
+                    <img src="@/assets/Star12.svg" alt="" />
                     <div class="btn">
                          <button>Shop Crocs</button>
                     </div>
@@ -66,6 +67,19 @@
                width: 80rem;
                margin: 0 auto;
                position: relative;
+               img {
+                    &:nth-child(1) {
+                         @include media("<=tablet") {
+                              display: none;
+                         }
+                    }
+                    &:nth-child(2) {
+                         display: none;
+                         @include media("<=tablet") {
+                              display: block;
+                         }
+                    }
+               }
                .btn {
                     @include btn($red, black);
                     top: 77%;
@@ -73,11 +87,10 @@
                     position: absolute;
                     @include media("<=tablet") {
                          left: 35%;
-                         top: 70%;
                     }
                     @include media("<=phone-tab") {
                          left: 26%;
-                         top: 60%;
+                         top: 70%;
                     }
                }
                @include media("<=tablet") {
