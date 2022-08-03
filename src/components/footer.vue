@@ -99,6 +99,11 @@
                     border-radius: 50rem;
                     @extend %flex_r;
                     gap: 0 1rem;
+                    @include media("<=tablet") {
+                         gap: 0 0.4rem;
+                         width: 100%;
+                         padding: 0.7rem 1rem;
+                    }
                     input {
                          width: 19rem;
                          @include media("<=tablet") {
@@ -108,6 +113,9 @@
                     .btn {
                          @include btn($croc-green, white);
                          align-self: flex-end;
+                         button {
+                              padding: 0.5rem 1.2rem;
+                         }
                     }
                }
           }
