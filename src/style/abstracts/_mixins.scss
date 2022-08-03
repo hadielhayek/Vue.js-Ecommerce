@@ -15,6 +15,7 @@
 @mixin flex_col($gap) {
      display: flex;
      flex-direction: column;
+     -webkit-column-gap: $gap;
      gap: $gap;
      display: -webkit-box;
      display: -moz-box;
