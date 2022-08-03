@@ -120,7 +120,7 @@
                }
           }
           .section2 {
-               @include flex_col(6rem);
+               @include flex_col(10rem);
                padding: 3.5rem 0px;
                @include media("<=phone-tab") {
                     gap: 4rem;
@@ -155,7 +155,7 @@
                }
                .logo_footer {
                     text-align: center;
-                    width: 65rem;
+                    width: 90%;
                     margin: 0 auto;
                     @include media("<=tablet") {
                          width: 100%;
