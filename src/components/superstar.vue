@@ -13,6 +13,7 @@
                          <button>Shop Crocs</button>
                     </div>
                </div>
+               <img src="@/assets/heart.svg"  style="position: absolute; bottom: 0px; z-index: 20; right: 0px; width:15rem;" alt="">
           </div>
      </section>
      <div class="p_superstar">
@@ -49,6 +50,7 @@
      @extend %borderb;
      &_sza {
           padding: 3rem 0;
+          position: relative;
           text-align: center;
           @include flex_col(2rem);
           h1 {
