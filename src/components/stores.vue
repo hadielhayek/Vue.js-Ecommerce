@@ -22,7 +22,7 @@
      background: #a259ff;
      padding: 4rem 0px;
      &_wrap {
-        position: relative;
+          position: relative;
           @extend %flex_r;
           @include media("<=tablet") {
                @include flex_col(4rem);
