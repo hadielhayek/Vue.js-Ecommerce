@@ -2,8 +2,8 @@
      <landing />
      <Campaign />
      <Arrival />
-     <Download />
      <Cfc />
+     <Download />
      <thirdsect />
      <Stores />
      <Footer />

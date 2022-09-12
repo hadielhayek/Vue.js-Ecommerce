@@ -24,16 +24,16 @@
      display: -webkit-flex;
 }
 
-@mixin btn($bg, $col) {
+@mixin btn($border, $col) {
      button {
-          background-color: $bg;
+          background-color: transparent;
           padding: 0.8rem 2.4rem;
           border-radius: 5rem;
           outline: none;
           font-weight: 900;
           color: $col !important;
           cursor: pointer;
-          border: none;
+          border: 0.2rem solid $border;
           font-size: 1.5em;
           font-family: "Athletic";
           @content;
@@ -49,6 +49,7 @@
           @include flex_col(0rem);
      }
      .cmp {
+          height: 49rem;
           width: 50%;
           @include flex(center, center);
           @include media("<=tablet") {
@@ -59,6 +60,9 @@
           &:nth-child(1) {
                background: $col1;
                border-right: 1px solid black;
+               .sect_1 {
+                    width: 85%;
+               }
                @include media("<=tablet") {
                     border: {
                          right: none;

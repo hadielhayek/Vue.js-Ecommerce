@@ -21,7 +21,7 @@
                     </div>
                </div>
                <div class="btn">
-                    <button>See All</button>
+                    <button>&nbsp;See All&nbsp;</button>
                </div>
           </div>
      </section>
@@ -36,7 +36,7 @@ import croce from "@/db/croce.json";
      padding: 4rem 0px;
      overflow-x: hidden;
      border-top: 2px solid black;
-     background: #fefced;
+     background: white;
      @extend %borderb;
      &_wrap {
           @include flex_col(4.5rem 0);
@@ -50,10 +50,10 @@ import croce from "@/db/croce.json";
                     gap: 0 0.7rem;
                }
                &_item {
-                    font-size: 2rem;
+                    font-size: 1.9rem;
                     border-radius: 20rem;
-                    padding: 0.5rem 1.5rem;
-                    font-family: "Athletic Medium";
+                    padding: 0.5rem 1.2rem;
+                    font-family: "Athletic";
                     white-space: nowrap;
                     border: 0.2rem solid black;
                     @include media("<=phone-tab") {
@@ -97,7 +97,8 @@ import croce from "@/db/croce.json";
                          }
                     }
                     p {
-                         font-size: 1.5em;
+                         font-size: 2em;
+                         font-family: "Athletic";
                          @include media("<=phone-tab") {
                               font-size: 1.2em;
                          }
@@ -108,11 +109,7 @@ import croce from "@/db/croce.json";
                }
           }
           .btn {
-               @include btn($black-bg, white);
-               padding-bottom: 1rem;
-               @include media("<=phone-tab") {
-                    padding-bottom: 0;
-               }
+               @include btn(black, rgb(0, 0, 0));
           }
      }
 }

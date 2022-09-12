@@ -1,17 +1,17 @@
 <template>
      <section class="app_download">
           <div class="contain_wrap app_download_wrap">
-               <h1>Get The Crocs App</h1>
+               <h1>Download The Crocs App</h1>
                <div class="app_download_wrap_icons">
                     <div class="img">
-                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479461/crooooocs/appstore_mniamk.svg" alt="" />
+                         <img src="@/assets/appstore.svg" alt="">
                     </div>
                     <div class="img">
-                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479422/crooooocs/playstore_xtmcgc.svg" alt="" />
+                         <img src="@/assets/playstore.svg" alt="">
                     </div>
                </div>
                <div class="sha256">
-                    <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480255/crooooocs/download_1433_ve65se.svg" alt="" />
+                    <img src="@/assets/14.svg" />
                </div>
           </div>
      </section>
@@ -21,27 +21,27 @@
 
 <style lang="scss" scoped>
 .app_download {
-     padding-top: 3rem;
-     background-image: url("https://res.cloudinary.com/ferventdev/image/upload/v1659479474/crooooocs/143_y3plpw.svg");
+     padding-top: 4rem;
      text-align: center;
-     background-color: #0b0b0b;
-     background-size: contain;
+     background-color: #6738da;
+     background-size: cover;
      background-position: bottom;
+     background-image: url(../assets/wav.svg);
      background-repeat: no-repeat;
      @include media("<=phone-tab") {
           background-image: none;
      }
      &_wrap {
-          @include flex_col(1.5rem);
+          @include flex_col(2rem);
           h1 {
                color: white;
           }
           &_icons {
                @include flex(center, center) {
-                    gap: 0 2rem;
+                    gap: 0 2.4rem;
                }
                .img {
-                    width: 13rem;
+                    width: 12rem;
                     @include media("<=phone-tab") {
                          width: 9rem;
                     }
@@ -51,11 +51,13 @@
                }
           }
           .sha256 {
-               padding-top: 1rem;
-               width: 40rem;
+               padding-top: 2.2rem;
+               width: 28rem;
                margin: 0 auto;
+               position: relative;
+               top: 1rem;
                @include media("<=phone-tab") {
-                    width: 100%;
+                    width: 101%;
                }
                img {
                     width: 100%;

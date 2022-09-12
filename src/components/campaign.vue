@@ -35,18 +35,14 @@ import Marquee from "./marquee.vue";
      }
 }
 .cmp {
-     height: 46rem;
      &:nth-child(1) {
           .sect_1 {
-               width: 80%;
                @include flex_col(2.6rem);
                p {
                     width: 100%;
                }
                .btn {
-                    @include btn($pale-orange, black) {
-                         border: 0.2rem solid black;
-                    }
+                    @include btn(black, black);
                }
           }
      }
