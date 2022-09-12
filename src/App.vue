@@ -3,6 +3,7 @@
      <Campaign />
      <Arrival />
      <Collab />
+     <Feature />
      <Cfc />
      <Download />
      <thirdsect />
@@ -20,4 +21,5 @@ import Arrival from "./components/arrivals.vue";
 import Campaign from "./components/campaign.vue";
 import Cfc from "./components/funclub.vue";
 import Collab from "./components/collab.vue";
+import Feature from "./components/featured.vue";
 </script>

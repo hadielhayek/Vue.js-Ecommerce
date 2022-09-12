@@ -1,3 +1,4 @@
+@import "./mixins";
 $pale-orange: #ffbc01;
 $croc-green: #38bc42;
 $pale-green: #caf3b2;
@@ -7,6 +8,11 @@ $pinke: #ff8576;
 $milk: #fff7e0;
 $red: #fb5531;
 $croc-blue: #226edc;
+$purple: #a473ff;
+$lavender: #e8dbff;
+$pink: #ff90e8;
+$lightpink: #ffdafa;
+$darke: #141414;
 
 %flex_r {
      display: flex;
@@ -19,4 +25,12 @@ $croc-blue: #226edc;
 %polaroid {
      padding: 1rem;
      background: white;
+}
+%cmptext {
+     p {
+          width: 95%;
+          @include media("<=phone-tab") {
+               width: 100%;
+          }
+     }
 }

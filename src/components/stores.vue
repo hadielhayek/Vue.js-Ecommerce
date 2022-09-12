@@ -43,7 +43,6 @@
                }
           }
           .sect_2 {
-               @include flex(center, center);
                .img {
                     @extend %polaroid;
                     width: 38rem;
