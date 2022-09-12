@@ -55,7 +55,7 @@
                width: 28rem;
                margin: 0 auto;
                position: relative;
-               top: 1rem;
+               top: 0.29rem;
                @include media("<=phone-tab") {
                     width: 101%;
                }

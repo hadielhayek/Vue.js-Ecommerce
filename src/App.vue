@@ -7,7 +7,7 @@
      <thirdsect />
      <Cfc />
      <Download />
-     
+
      <Stores />
      <Footer />
 </template>

@@ -1,5 +1,5 @@
 {
-     "crocs":[
+     "crocs": [
           {
                "id": 1,
                "name": "Bamba Sandals",
@@ -21,27 +21,26 @@
                "price": 20
           }
      ],
-     "tags":[
+     "tags": [
           {
-              "id":1,
-              "@" : "@jesseakoh",
-              "name":"Gang"
+               "id": 1,
+               "@": "@jesseakoh",
+               "name": "Gang"
           },
           {
-              "id":2,
-              "@" : "@thecreator",
-              "name":"SZA"
+               "id": 2,
+               "@": "@thecreator",
+               "name": "SZA"
           },
           {
-              "id":3,
-              "@" : "@sashdesign",
-              "name":"Jiggy"
+               "id": 3,
+               "@": "@sashdesign",
+               "name": "Jiggy"
           },
           {
-              "id":4,
-              "@" : "@olowoshiibi",
-              "name":"Ambient"
+               "id": 4,
+               "@": "@olowoshiibi",
+               "name": "Ambient"
           }
      ]
-     
 }
