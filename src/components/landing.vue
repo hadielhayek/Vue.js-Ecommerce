@@ -46,7 +46,7 @@
 .hero {
      @extend %borderb;
      position: relative;
-     min-height: 64rem;
+     min-height: 64.5rem;
      overflow: hidden;
      @include flex_col(1rem);
      @include media("<=tablet") {
@@ -58,8 +58,9 @@
      .img_1 {
           position: absolute;
           top: 0;
-          left: -4px;
+          left: 0px;
           z-index: -3;
+          width: 100%;
           @include media("<=tablet") {
                width: 100%;
                top: -4px;
@@ -82,7 +83,8 @@
           position: absolute;
           z-index: -2;
           bottom: -10px;
-          left: -4px;
+          left: -2px;
+          width: 100%;
           @include media("<=tablet") {
                width: 100%;
                left: 0px;
