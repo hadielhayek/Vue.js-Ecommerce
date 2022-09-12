@@ -1,22 +1,47 @@
-[
-     {
-          "id": 1,
-          "name": "Bamba Sandals",
-          "price": 28
-     },
-     {
-          "id": 2,
-          "name": "Crush Crocs",
-          "price": 50
-     },
-     {
-          "id": 3,
-          "name": "Candy Crocs",
-          "price": 100
-     },
-     {
-          "id": 4,
-          "name": "Sweet Crocs",
-          "price": 20
-     }
-]
+{
+     "crocs":[
+          {
+               "id": 1,
+               "name": "Bamba Sandals",
+               "price": 28
+          },
+          {
+               "id": 2,
+               "name": "Crush Crocs",
+               "price": 50
+          },
+          {
+               "id": 3,
+               "name": "Candy Crocs",
+               "price": 100
+          },
+          {
+               "id": 4,
+               "name": "Sweet Crocs",
+               "price": 20
+          }
+     ],
+     "tags":[
+          {
+              "id":1,
+              "@" : "@jesseakoh",
+              "name":"Gang"
+          },
+          {
+              "id":2,
+              "@" : "@thecreator",
+              "name":"SZA"
+          },
+          {
+              "id":3,
+              "@" : "@sashdesign",
+              "name":"Jiggy"
+          },
+          {
+              "id":4,
+              "@" : "@olowoshiibi",
+              "name":"Ambient"
+          }
+     ]
+     
+}

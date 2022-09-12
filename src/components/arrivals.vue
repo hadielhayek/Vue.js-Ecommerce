@@ -11,7 +11,7 @@
                     <div class="arrivals_wrap_filters_item">Top</div>
                </div>
                <div class="arrivals_wrap_croce">
-                    <div v-for="crocs in croce" :key="crocs.id" class="arrivals_wrap_croce_item">
+                    <div v-for="crocs in croc.crocs" :key="crocs.id" class="arrivals_wrap_croce_item">
                          <div class="img">
                               <img class="star" :src="require(`@/assets/Star${crocs.id}.svg`)" alt="" />
                               <img class="croc_shuu" :src="require(`@/assets/croc${crocs.id}.svg`)" alt="" />
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import croce from "@/db/croce.json";
+import croc from "@/db/croce.json";
 </script>
 
 <style lang="scss" scoped>

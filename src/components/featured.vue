@@ -90,6 +90,14 @@ export default {};
      @include split($pink, $lightpink);
      @extend %borderb;
      flex-direction: row-reverse;
+     .cmp{
+        &:nth-child(2){
+            border-right: 1px solid black;
+        }
+        &:nth-child(1){
+            border-left: 1px solid black;
+        }
+     }
      .sect_1 {
           @include flex_col(2.6rem);
           @extend %cmptext;
