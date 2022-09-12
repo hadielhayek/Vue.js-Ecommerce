@@ -26,7 +26,6 @@
      @include split($croc-green, $pale-green);
      .cmp {
           .sect_1 {
-               @include flex_col(2.6rem);
                color: white;
                @include media("<=tablet") {
                     width: 95%;
