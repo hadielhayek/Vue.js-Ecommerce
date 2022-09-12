@@ -1,12 +1,8 @@
 <template>
      <section class="hero">
           <div class="img_1">
-               <img src="@/assets/Png2.svg" alt="" />
-               <img src="@/assets/Png3.svg" alt="" />
-          </div>
-          <div class="img_2">
-               <img src="@/assets/Png4.svg" alt="" />
-               <img src="@/assets/png1.svg" alt="" />
+               <img src="@/assets/WaterLand.svg" alt="" />
+               <img src="@/assets/SurfaceofWater.svg" alt="" />
           </div>
           <header class="contain_wrap">
                <img class="logo" src="@/assets/logo.svg" alt="" />
@@ -44,9 +40,13 @@
 
 <style lang="scss">
 .hero {
+     // background-image: url('../assets/SurfaceofWater.svg'), url('../assets/WaterLand.svg');
+     // background-repeat: no-repeat;
+     // background-position: bottom, top;
+     // background-size: contain, cover;
      @extend %borderb;
      position: relative;
-     min-height: 64.5rem;
+     min-height: 59rem;
      overflow: hidden;
      @include flex_col(1rem);
      @include media("<=tablet") {
@@ -56,56 +56,30 @@
           min-height: 43em;
      }
      .img_1 {
-          position: absolute;
-          top: 0;
-          left: 0px;
-          z-index: -3;
-          width: 100%;
-          @include media("<=tablet") {
-               width: 100%;
-               top: -4px;
-               left: 0px;
-          }
           img {
-               width: 100%;
-               @include media("<=tablet") {
-                    display: none;
+               &:nth-child(1) {
+                    position: absolute;
+                    top: 0;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    z-index: -6;
+                    height: 100%;
                }
                &:nth-child(2) {
-                    display: none;
-                    @include media("<=tablet") {
-                         display: block;
-                    }
-               }
-          }
-     }
-     .img_2 {
-          position: absolute;
-          z-index: -2;
-          bottom: -10px;
-          left: -2px;
-          width: 100%;
-          @include media("<=tablet") {
-               width: 100%;
-               left: 0px;
-          }
-          img {
-               width: 100%;
-               @include media("<=tablet") {
-                    display: none;
-               }
-               &:nth-child(2) {
-                    display: none;
-                    @include media("<=tablet") {
-                         display: block;
-                    }
+                    position: absolute;
+                    bottom: 2%;
+                    left: 3%;
+                    z-index: -3;
+                    width: 94%;
+                    margin: 0 auto;
                }
           }
      }
      &_ctnt {
           text-align: center;
           margin-top: 12rem;
-          @include flex_col(5rem);
+          @include flex_col(8rem);
           @include media("<=tablet") {
                margin-top: 12rem;
                @include flex_col(8rem);
@@ -115,11 +89,13 @@
                @include flex_col(6rem);
           }
           h1 {
-               font-size: 6.5em;
+               font-size: 8.5em;
                flex-wrap: wrap;
-               color: white;
-
+               color: $pale-orange;
                gap: 0 1.5rem;
+               font-weight: 500;
+               -webkit-text-stroke: 1px black;
+               text-shadow: -3px 2px 0px black;
                @include media("<=tablet") {
                     font-size: 7em;
                     line-height: 6rem;
@@ -134,28 +110,24 @@
                @include flex(center, center);
                span {
                     display: inline-block;
-                    &:nth-child(1),
                     &:nth-child(2) {
-                         @include media("<=tablet") {
-                              color: #ffbc01;
-                              font-size: 0.8em;
-                         }
-                    }
-                    &:nth-child(2) {
-                         z-index: -3;
+                         z-index: -4;
                     }
                     &:nth-child(3) {
-                         z-index: -3;
+                         z-index: -4;
                     }
                }
           }
           .btn {
-               @include btn($pale-orange, $black-txt);
+               @include btn($pale-orange, $black-txt) {
+                    background: $pale-orange;
+                    padding: 1.1rem 2.2rem;
+               }
           }
      }
      header {
           @extend %flex_r;
-          padding: 2rem 0px;
+          padding: 0.5rem 0px;
           .menu_btn {
                display: none;
                @include media("<=tablet") {
@@ -198,10 +170,10 @@
                     display: none;
                }
                @include btn($croc-blue, white) {
-                    button {
-                         font-size: 1.1em;
-                         padding: 0.8rem 2rem;
-                    }
+                    background: $croc-blue;
+                    font-size: 1.2em;
+                    padding: 0.6rem 1.4rem;
+                    font-weight: "Athletic Medium";
                }
           }
      }

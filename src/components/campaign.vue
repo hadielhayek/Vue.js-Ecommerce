@@ -2,12 +2,12 @@
      <div class="marquee">
           <div class="span_slider">
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild &nbsp;</div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild &nbsp;></div>
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;></div>
                </h1>
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild &nbsp;></div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild &nbsp;></div>
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;></div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;></div>
                </h1>
           </div>
      </div>
