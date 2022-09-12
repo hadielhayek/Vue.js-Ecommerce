@@ -79,7 +79,7 @@
 
 <style lang="scss">
 .footer {
-     background: black;
+     background: #141414;
      color: white;
      .inner_div {
           border-top: 0.2rem solid white;
@@ -88,30 +88,38 @@
      &_wrap {
           &_email {
                @extend %flex_r;
-               padding: 2rem 0px;
+               padding: 1rem 0px;
                @include media("<=tablet") {
                     @include flex_col(3rem);
                     align-items: flex-start;
                }
                &--div {
                     background: white;
-                    padding: 0.7rem 2rem;
+                    padding: 0.6rem 0.5rem;
                     border-radius: 50rem;
                     @extend %flex_r;
                     gap: 0 1rem;
+                    width: 48%;
                     @include media("<=tablet") {
                          gap: 0 0.4rem;
                          width: 100%;
                          padding: 0.7rem 1rem;
                     }
                     input {
-                         width: 19rem;
+                         width: 80%;
+                         padding: 0 2rem;
+                         font-family: "Athletic";
                          @include media("<=tablet") {
                               width: 100%;
                          }
                     }
                     .btn {
-                         @include btn($croc-green, white);
+                         @include btn($croc-green, white) {
+                              background: $croc-green;
+                              font-size: 1.3em;
+                              font-family: "Athletic Light";
+                              padding: 0.8rem 1.9rem !important;
+                         }
                          align-self: flex-end;
                          button {
                               padding: 0.5rem 1.2rem;
