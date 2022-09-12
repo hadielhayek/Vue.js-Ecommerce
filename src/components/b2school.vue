@@ -13,17 +13,17 @@
                </div>
           </div>
      </section>
-     <div class="marquee">
+     <div class="marquee" @mouseover="$store.dispatch('pauseMarquee')" @mouseleave="$store.dispatch('playMarquee')" >
           <div class="span_slider">
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
-                    <div class="_g span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
-                    <div class="_a span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+                    <div class="_p span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
+                    <div class="_a span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
                </h1>
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
-                    <div class="_g span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
-                    <div class="_a span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+                    <div class="_p span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
+                    <div class="_a span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
                </h1>
           </div>
      </div>
@@ -67,6 +67,7 @@
           }
           &_wrap {
                @include flex(center, center);
+               animation: marquee 18s linear 0s infinite normal forwards;
                flex-wrap: nowrap;
                gap: 0 0.8rem;
                overflow: visible;

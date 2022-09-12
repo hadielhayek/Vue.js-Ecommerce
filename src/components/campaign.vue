@@ -1,13 +1,13 @@
 <template>
      <div class="marquee">
-          <div class="span_slider">
+          <div @mouseover="$store.dispatch('pauseMarquee')" @mouseleave="$store.dispatch('playMarquee')" class="span_slider">
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;</div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;></div>
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild &nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild &nbsp;</div>
                </h1>
                <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild&nbsp;></div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild&nbsp;></div>
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild &nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild &nbsp;</div>
                </h1>
           </div>
      </div>
@@ -32,6 +32,9 @@
           </div>
      </section>
 </template>
+
+<script setup lang="ts">
+</script>
 
 <style lang="scss" scoped>
 .campaign {
@@ -77,6 +80,7 @@
           &_wrap {
                @include flex(center, center);
                flex-wrap: nowrap;
+               animation: marquee 18s linear 0s infinite normal forwards;
                gap: 0 1rem;
                overflow: visible;
                flex-shrink: 0;

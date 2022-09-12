@@ -2,3 +2,14 @@
      width: 93%;
      margin: 0 auto;
 }
+.marquee {
+     cursor: default;
+}
+@keyframes marquee {
+     0% {
+          transform: translate(0);
+     }
+     100% {
+          transform: translateX(-100%);
+     }
+}
