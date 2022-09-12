@@ -4,10 +4,10 @@
                <h1>Download The Crocs App</h1>
                <div class="app_download_wrap_icons">
                     <div class="img">
-                         <img src="@/assets/appstore.svg" alt="">
+                         <img src="@/assets/appstore.svg" alt="" />
                     </div>
                     <div class="img">
-                         <img src="@/assets/playstore.svg" alt="">
+                         <img src="@/assets/playstore.svg" alt="" />
                     </div>
                </div>
                <div class="sha256">

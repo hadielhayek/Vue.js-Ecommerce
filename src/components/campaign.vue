@@ -31,8 +31,7 @@ import Marquee from "./marquee.vue";
      @include media("<=tablet") {
           @include flex_col(0rem);
      }
-     @include split($pale-orange, $milk) {
-     }
+     @include split($pale-orange, $milk);
 }
 .cmp {
      &:nth-child(1) {

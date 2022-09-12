@@ -29,35 +29,29 @@
      @include split(#1d62c6, #bcd4f5);
 }
 .cmp {
-     &:nth-child(1) {
-          .sect_1 {
-               @include flex_col(2.8rem);
-               color: white;
-               p {
-                    width: 95%;
-                    @include media("<=phone-tab") {
-                         width: 100%;
-                    }
-               }
-               .btn {
-                    @include btn(white, white);
+     .sect_1 {
+          @include flex_col(2.8rem);
+          color: white;
+          p {
+               width: 95%;
+               @include media("<=phone-tab") {
+                    width: 100%;
                }
           }
+          .btn {
+               @include btn(white, white);
+          }
      }
-     &:nth-child(2) {
-          .sect_2 {
-               @include flex(center, center);
-               position: relative;
-               .img_cont {
-                    padding: 1rem;
-                    background: white;
-                    width: 38rem;
-                    @include media("<=phone") {
-                         width: 27rem;
-                    }
-                    img {
-                         width: 100%;
-                    }
+     .sect_2 {
+          @include flex(center, center);
+          .img_cont {
+               @extend %polaroid;
+               width: 38rem;
+               @include media("<=phone") {
+                    width: 27rem;
+               }
+               img {
+                    width: 100%;
                }
           }
      }
