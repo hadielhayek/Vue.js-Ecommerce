@@ -62,6 +62,7 @@
                border-right: 1px solid black;
                .sect_1 {
                     width: 85%;
+                    @include flex_col(2.6rem);
                }
                @include media("<=tablet") {
                     border: {

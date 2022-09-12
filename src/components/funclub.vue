@@ -30,7 +30,6 @@
 }
 .cmp {
      .sect_1 {
-          @include flex_col(2.8rem);
           color: white;
           p {
                width: 95%;
@@ -43,7 +42,6 @@
           }
      }
      .sect_2 {
-          @include flex(center, center);
           .img_cont {
                @extend %polaroid;
                width: 38rem;

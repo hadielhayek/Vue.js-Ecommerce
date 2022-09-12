@@ -36,7 +36,6 @@ import Marquee from "./marquee.vue";
 .cmp {
      &:nth-child(1) {
           .sect_1 {
-               @include flex_col(2.6rem);
                p {
                     width: 100%;
                }

@@ -38,6 +38,27 @@
                </div>
           </div>
      </section>
+     <section class="sza">
+          <div class="cmp">
+               <div class="sect_1">
+                    <h1>Sza Unique Crocs</h1>
+                    <p>
+                         The SZA X Crocs Classic Clog puts her personality up top, with colorful Jibbitz charms that showcase the world of SZA, totems
+                         that keep her grounded, calm, and collective.
+                    </p>
+                    <div class="btn">
+                         <button>Shop Crocs</button>
+                    </div>
+               </div>
+          </div>
+          <div class="cmp">
+               <div class="sect_2">
+                    <div class="img">
+                         <img src="@/assets/sza.svg" alt="" />
+                    </div>
+               </div>
+          </div>
+     </section>
 </template>
 
 <script>
@@ -80,6 +101,25 @@ export default {};
      .sect_2 {
           .img {
                width: 23rem;
+               img {
+                    width: 100%;
+               }
+          }
+     }
+}
+.sza {
+     @include split($sza, $pale-green);
+     @extend %borderb;
+     .sect_1 {
+          @include flex_col(2.6rem);
+          color: $szagrey;
+          .btn {
+               @include btn($szagrey, $szagrey);
+          }
+     }
+     .sect_2 {
+          .img {
+               width: 27rem;
                img {
                     width: 100%;
                }
