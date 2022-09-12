@@ -35,6 +35,7 @@ import croce from "@/db/croce.json";
 .arrivals {
      padding: 4rem 0px;
      overflow-x: hidden;
+     border-top: 2px solid black;
      background: #fefced;
      @extend %borderb;
      &_wrap {

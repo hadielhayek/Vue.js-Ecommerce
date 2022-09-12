@@ -27,7 +27,7 @@
 @mixin btn($bg, $col) {
      button {
           background-color: $bg;
-          padding: 1.2rem 2.5rem;
+          padding: 0.8rem 2.4rem;
           border-radius: 5rem;
           outline: none;
           font-weight: 900;
@@ -35,13 +35,13 @@
           cursor: pointer;
           border: none;
           font-size: 1.5em;
-          font-family: "Athletic Bold";
+          font-family: "Athletic";
+          @content;
           @include media("<=phone-tab") {
                font-size: 1.2em;
                padding: 1rem 2.4rem;
           }
      }
-     @content;
 }
 @mixin split($col1, $col2) {
      @include flex(space-between, center);
@@ -58,7 +58,7 @@
           }
           &:nth-child(1) {
                background: $col1;
-               border-right: 2px solid black;
+               border-right: 1px solid black;
                @include media("<=tablet") {
                     border: {
                          right: none;
@@ -68,7 +68,7 @@
           }
           &:nth-child(2) {
                background: $col2;
-               border-left: 2px solid black;
+               border-left: 1px solid black;
                @include media("<=tablet") {
                     border: {
                          top: 1px solid black;

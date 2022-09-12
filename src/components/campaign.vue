@@ -1,40 +1,29 @@
 <template>
+     <Marquee text="Where Imagination Runs Wild" />
      <section class="campaign">
           <div class="cmp">
                <div class="sect_1">
-                    <h1>Crocs Essential Campaign</h1>
-                    <p>Crocs now enable customers choose what look, style or theme thier crocs would look like to fit thier with style.</p>
+                    <h1>Create Your Unique Style</h1>
+                    <p>
+                         We are starting a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style or theme thier
+                         crocs will look like.
+                    </p>
                     <div class="btn">
-                         <button>Start Styling</button>
+                         <button>Style Crocs</button>
                     </div>
                </div>
           </div>
           <div class="cmp">
                <div class="sect_2">
-                    <img src="@/assets/Paint.svg" alt="" style="position:absolute; top: -5rem; left: 0px; width: 18rem;" class="paint">
-                    <img src="@/assets/laptop.svg" style="position:absolute; bottom: -5rem;right: 0px; width:14rem;" alt="" class="laptop">
-                    <div class="img_cont">
-                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480201/crooooocs/croocs_1_efxosu.svg" alt="" />
-                    </div>
+                    <img src="@/assets/Paint.svg" alt="" style="position: absolute; top: -5rem; left: 0px; width: 18rem" class="paint" />
+                    <img src="@/assets/laptop.svg" style="position: absolute; bottom: -5rem; right: 0px; width: 14rem" alt="" class="laptop" />
                </div>
           </div>
      </section>
-
-     <div class="marquee">
-          <div class="span_slider">
-               <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
-               </h1>
-               <h1 class="span_slider_wrap">
-                    <div class="_p span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
-                    <div class="_g span_slider_wrap_txt">Where Imagination Runs Wild&nbsp;<sup>.</sup></div>
-               </h1>
-          </div>
-     </div>
 </template>
-
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Marquee from "./marquee.vue";
+</script>
 
 <style lang="scss" scoped>
 .campaign {
@@ -42,18 +31,22 @@
      @include media("<=tablet") {
           @include flex_col(0rem);
      }
-     @include split($croc-green, $pale-orange);
+     @include split($pale-orange, $milk) {
+     }
 }
 .cmp {
-     height: 45rem;
+     height: 46rem;
      &:nth-child(1) {
           .sect_1 {
-               @include flex_col(2rem);
+               width: 80%;
+               @include flex_col(2.6rem);
                p {
                     width: 100%;
                }
                .btn {
-                    @include btn($pale-orange, black);
+                    @include btn($pale-orange, black) {
+                         border: 0.2rem solid black;
+                    }
                }
           }
      }
@@ -62,56 +55,7 @@
           .sect_2 {
                @include flex(center, center);
                position: relative;
-               .img_cont {
-                    width: 27rem;
-                    @include media("<=phone") {
-                         width: 20rem;
-                    }
-                    img {
-                         width: 100%;
-                    }
-               }
           }
-     }
-}
-.marquee {
-     background: $black-bg;
-     padding: 2rem 1rem;
-     overflow: hidden;
-     @include media("<=phone-tab") {
-          padding: 1rem 1rem;
-     }
-     .span_slider {
-          @include flex(space-between, center);
-          flex-wrap: nowrap;
-          overflow: visible;
-          &_wrap {
-               @include flex(center, center);
-               flex-wrap: nowrap;
-               gap: 0 1rem;
-               overflow: visible;
-               flex-shrink: 0;
-               @include media("<=phone-tab") {
-                    font-size: 2em !important;
-               }
-               &_txt {
-                    @include flex(space-between, center);
-               }
-          }
-          ._p {
-               color: $pale-orange;
-          }
-          ._g {
-               color: $croc-green;
-          }
-     }
-}
-@keyframes marquee{
-     0%{
-          transform: translate(0);
-     }
-     100%{
-          transform: translateX(50%);
      }
 }
 </style>
