@@ -37,7 +37,13 @@ import croc from "@/db/croce.json";
                scroll-snap-type: x mandatory;
                -webkit-overflow-scrolling: touch;
                gap: 0 3rem;
+
                &_item {
+                    @include flex_col(0.4rem);
+                    p {
+                         font-size: 1.2em !important;
+                         font-family: "Athletic Medium";
+                    }
                     padding: 1rem;
                     box-shadow: 0px 0.3px 4px 0.3px rgba(34, 34, 34, 0.18);
                     flex-shrink: 0;

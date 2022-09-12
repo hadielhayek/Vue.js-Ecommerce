@@ -5,14 +5,15 @@
      <Collab />
      <Feature />
      <thirdsect />
+     <School />
      <Cfc />
      <Download />
-
      <Stores />
      <Footer />
 </template>
 
 <script setup lang="ts">
+import School from "./components/b2school.vue";
 import thirdsect from "./components/reels.vue";
 import Footer from "./components/footer.vue";
 import Download from "./components/getapp.vue";

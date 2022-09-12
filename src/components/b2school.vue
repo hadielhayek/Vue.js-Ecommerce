@@ -1,0 +1,92 @@
+<template>
+     <section class="back2school">
+          <div class="contain_wrap back2school_wrap">
+               <div class="txt">
+                    <h1>Crocs Back <br />to School</h1>
+                    <p>Get the best Discount on our back to school deals</p>
+                    <div class="btn">
+                         <button>Shop Crocs</button>
+                    </div>
+               </div>
+               <div class="img">
+                    <img src="@/assets/b2s.svg" alt="" />
+               </div>
+          </div>
+     </section>
+     <div class="marquee">
+          <div class="span_slider">
+               <h1 class="span_slider_wrap">
+                    <div class="_p span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+                    <div class="_a span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+               </h1>
+               <h1 class="span_slider_wrap">
+                    <div class="_p span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+                    <div class="_a span_slider_wrap_txt">Join Crocs Fun Club&nbsp;</div>
+               </h1>
+          </div>
+     </div>
+</template>
+å
+<script setup lang="ts"></script>
+
+<style lang="scss" scoped>
+.back2school {
+     background: #ffad66;
+     padding: 6rem 0px;
+     &_wrap {
+          @include flex(space-between, center);
+          .txt {
+               @include flex_col(2.6rem);
+               .btn {
+                    @include btn(black, black);
+               }
+          }
+          .img {
+               width: 55%;
+               img {
+                    width: 100%;
+               }
+          }
+     }
+}
+.marquee {
+     background: $black-bg;
+     padding: 2rem 1rem;
+     overflow: hidden;
+     @include media("<=phone-tab") {
+          padding: 1rem 1rem;
+     }
+     .span_slider {
+          @include flex(space-between, center);
+          flex-wrap: nowrap;
+          overflow: visible;
+          h1 {
+               font-weight: 500;
+          }
+          &_wrap {
+               @include flex(center, center);
+               flex-wrap: nowrap;
+               gap: 0 0.8rem;
+               overflow: visible;
+               flex-shrink: 0;
+               @include media("<=phone-tab") {
+                    font-size: 2em !important;
+               }
+               &_txt {
+                    @include flex(space-between, center);
+               }
+          }
+          ._p {
+               color: $purple;
+          }
+          ._g {
+               color: $red;
+          }
+          ._a {
+               color: $croc-green;
+          }
+     }
+}
+</style>

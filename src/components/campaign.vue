@@ -1,5 +1,16 @@
 <template>
-     <Marquee text="Where Imagination Runs Wild" />
+     <div class="marquee">
+          <div class="span_slider">
+               <h1 class="span_slider_wrap">
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild &nbsp;</div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild &nbsp;></div>
+               </h1>
+               <h1 class="span_slider_wrap">
+                    <div class="_p span_slider_wrap_txt">Where Imagination runs wild &nbsp;></div>
+                    <div class="_g span_slider_wrap_txt">Where Imagination runs wild &nbsp;></div>
+               </h1>
+          </div>
+     </div>
      <section class="campaign">
           <div class="cmp">
                <div class="sect_1">
@@ -21,9 +32,6 @@
           </div>
      </section>
 </template>
-<script setup lang="ts">
-import Marquee from "./marquee.vue";
-</script>
 
 <style lang="scss" scoped>
 .campaign {
@@ -49,6 +57,41 @@ import Marquee from "./marquee.vue";
           .sect_2 {
                @include flex(center, center);
                position: relative;
+          }
+     }
+}
+.marquee {
+     background: $black-bg;
+     padding: 2rem 1rem;
+     overflow: hidden;
+     @include media("<=phone-tab") {
+          padding: 1rem 1rem;
+     }
+     .span_slider {
+          @include flex(space-between, center);
+          flex-wrap: nowrap;
+          overflow: visible;
+          h1 {
+               font-weight: 500;
+          }
+          &_wrap {
+               @include flex(center, center);
+               flex-wrap: nowrap;
+               gap: 0 1rem;
+               overflow: visible;
+               flex-shrink: 0;
+               @include media("<=phone-tab") {
+                    font-size: 2em !important;
+               }
+               &_txt {
+                    @include flex(space-between, center);
+               }
+          }
+          ._p {
+               color: $pale-orange;
+          }
+          ._g {
+               color: $croc-green;
           }
      }
 }
