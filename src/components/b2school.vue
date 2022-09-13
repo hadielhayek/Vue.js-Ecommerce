@@ -13,7 +13,7 @@
                </div>
           </div>
      </section>
-     <div class="marquee" @mouseover="$store.dispatch('pauseMarquee')" @mouseleave="$store.dispatch('playMarquee')" >
+     <div class="marquee" @mouseover="$store.dispatch('pauseMarquee')" @mouseleave="$store.dispatch('playMarquee')">
           <div class="span_slider">
                <h1 class="span_slider_wrap">
                     <div class="_p span_slider_wrap_txt">Join Crocs Fun Club &nbsp;</div>
