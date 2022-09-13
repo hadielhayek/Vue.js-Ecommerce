@@ -12,7 +12,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479414/crooooocs/stores_kfmkvk.svg" alt="" />
+                         <img src="@/assets/stores_kfmkvk.svg" alt="" />
                     </div>
                </div>
           </div>

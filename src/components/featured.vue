@@ -12,7 +12,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659479416/crooooocs/sa2_njkafp.svg" alt="" />
+                         <img src="@/assets/sa2_njkafp.svg" alt="" />
                     </div>
                </div>
           </div>
@@ -33,7 +33,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="https://res.cloudinary.com/ferventdev/image/upload/v1659480334/crooooocs/sa1_gedk17.svg" alt="" />
+                         <img src="@/assets/sa1_gedk17.svg" alt="" />
                     </div>
                </div>
           </div>

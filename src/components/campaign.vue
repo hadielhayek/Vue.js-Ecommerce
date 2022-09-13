@@ -84,7 +84,7 @@
                overflow: visible;
                flex-shrink: 0;
                @include media("<=phone-tab") {
-                    font-size: 2em !important;
+                    font-size: 3.5em !important;
                }
                &_txt {
                     @include flex(space-between, center);
