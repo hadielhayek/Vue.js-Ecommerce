@@ -28,6 +28,7 @@ import croc from "@/db/croce.json";
      background: white;
      padding: 4rem 0px;
      @include flex_col(4.6rem);
+     overflow-x: hidden;
      &_carousel {
           &_wrap {
                padding-bottom: 2rem;

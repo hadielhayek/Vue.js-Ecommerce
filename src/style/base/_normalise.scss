@@ -11,8 +11,8 @@ html {
           font-size: calc(100vw / 475 * 10);
      }
      @include media("<=phone-tab") {
-          font-size: calc(100vw / 265 * 10);
-     }
+          font-size: calc(100vw / 375 * 14);
+      }
 }
 body {
      font-family: "Athletic";

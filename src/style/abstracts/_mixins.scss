@@ -35,7 +35,7 @@
           cursor: pointer;
           border: 0.2rem solid $border;
           font-size: 1.5em;
-          font-family: "Athletic";
+          font-family: Athletic;
           @content;
           @include media("<=phone-tab") {
                font-size: 1.2em;

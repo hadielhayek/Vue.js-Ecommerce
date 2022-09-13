@@ -4,6 +4,10 @@
                <img src="@/assets/WaterLand.svg" alt="" />
                <img src="@/assets/SurfaceofWater.svg" alt="" />
           </div>
+          <div class="img_1">
+               <img src="@/assets/waterland_mobile.svg" alt="">
+               <img src="@/assets/surface_mobile.svg" alt="">
+          </div>
           <header class="contain_wrap">
                <img class="logo" src="@/assets/logo.svg" alt="" />
                <ul>
@@ -40,21 +44,19 @@
 
 <style lang="scss">
 .hero {
-     // background-image: url('../assets/SurfaceofWater.svg'), url('../assets/WaterLand.svg');
-     // background-repeat: no-repeat;
-     // background-position: bottom, top;
-     // background-size: contain, cover;
      @extend %borderb;
      position: relative;
      min-height: 59rem;
      overflow: hidden;
      @include flex_col(1rem);
      @include media("<=tablet") {
-          min-height: 78rem;
+          min-height: 70rem;
      }
      @include media("<=phone-tab") {
-          min-height: 43em;
+          min-height: 46em;
      }
+     background: $croc-blue;
+     z-index: 51;
      .img_1 {
           img {
                &:nth-child(1) {
@@ -73,6 +75,22 @@
                     z-index: -3;
                     width: 94%;
                     margin: 0 auto;
+                    @include media("<=tablet"){
+                         width: 100%;
+                         left: 0%;
+                         bottom: 3%;
+                    }
+               }
+          }
+          &:nth-child(2){
+               display: none;
+               @include media("<=tablet"){
+                    display: block;
+               }
+          }
+          &:nth-child(1){
+               @include media("<=tablet"){
+                    display: none;
                }
           }
      }
@@ -85,8 +103,8 @@
                @include flex_col(8rem);
           }
           @include media("<=phone-tab") {
-               margin-top: 3rem;
-               @include flex_col(6rem);
+               margin-top: 6rem;
+               @include flex_col(5.5rem);
           }
           h1 {
                font-size: 8.5em;
@@ -97,15 +115,16 @@
                -webkit-text-stroke: 1px black;
                text-shadow: -3px 2px 0px black;
                @include media("<=tablet") {
-                    font-size: 7em;
                     line-height: 6rem;
+                    font-size: 7em;
                     span {
                          text-align: center;
                     }
                }
                @include media("<=phone-tab") {
-                    font-size: 4em;
-                    line-height: 4rem;
+                    font-size: 5.2em;
+                    line-height: 4.3rem;
+                    letter-spacing: 0.005em;
                }
                @include flex(center, center);
                span {
@@ -115,6 +134,10 @@
                     }
                     &:nth-child(3) {
                          z-index: -4;
+                         @include media("<=phone-tab"){
+                              color: #67A7F4;
+                              font-size: 5.8rem;
+                         }
                     }
                }
           }

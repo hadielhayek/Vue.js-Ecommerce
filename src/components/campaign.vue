@@ -80,7 +80,7 @@
           &_wrap {
                @include flex(center, center);
                flex-wrap: nowrap;
-               animation: marquee 18s linear 0s infinite normal forwards;
+               animation: marquee 20s linear 0s infinite normal forwards;
                gap: 0 1rem;
                overflow: visible;
                flex-shrink: 0;
