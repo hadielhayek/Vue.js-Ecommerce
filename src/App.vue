@@ -24,4 +24,11 @@ import Campaign from "./components/campaign.vue";
 import Cfc from "./components/funclub.vue";
 import Collab from "./components/collab.vue";
 import Feature from "./components/featured.vue";
+
+import { split } from "./animations/split";
+import { onMounted } from "vue";
+
+onMounted(()=>{
+     split();
+})
 </script>

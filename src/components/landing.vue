@@ -28,7 +28,7 @@
                </div>
           </header>
           <div class="hero_ctnt">
-               <h1>
+               <h1 data-animation="header">
                     <span>Style</span>
                     <span>Your</span>
                     <span>Uniqueness</span>
