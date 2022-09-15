@@ -72,6 +72,11 @@ export default {};
      .sect_1 {
           color: white;
           @include flex_col(2.6rem);
+          h1 {
+               @include media("<=phone-tab") {
+                    font-size: 3.9em;
+               }
+          }
           @extend %cmptext;
           .btn {
                @include btn(white, white);
@@ -82,6 +87,9 @@ export default {};
                width: 20rem;
                img {
                     width: 100%;
+               }
+               @include media("<=phone-tab") {
+                    width: 18rem;
                }
           }
      }
@@ -112,6 +120,9 @@ export default {};
                img {
                     width: 100%;
                }
+               @include media("<=phone-tab") {
+                    width: 18rem;
+               }
           }
      }
 }
@@ -130,6 +141,9 @@ export default {};
                width: 27rem;
                img {
                     width: 100%;
+               }
+               @include media("<=phone-tab") {
+                    width: 20rem;
                }
           }
      }

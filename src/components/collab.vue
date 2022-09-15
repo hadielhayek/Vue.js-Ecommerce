@@ -44,6 +44,9 @@ export default {};
      background: #12203b;
      &_wrap {
           @include flex_col(6rem);
+          @include media("<=tablet") {
+               @include flex_col(4rem);
+          }
           &_txt {
                text-align: center;
                color: #ffa9aa;
@@ -51,7 +54,7 @@ export default {};
                p {
                     width: 80%;
                     margin: 0 auto;
-                    @include media("<=tablet"){
+                    @include media("<=tablet") {
                          width: 95%;
                     }
                }
@@ -64,10 +67,16 @@ export default {};
                overflow-x: auto;
                scroll-snap-type: x mandatory;
                -webkit-overflow-scrolling: touch;
+               @include media("<=tablet") {
+                    gap: 0 2.5rem;
+               }
                &_star {
                     width: 26.5%;
                     scroll-snap-align: center;
                     flex-shrink: 0;
+                    @include media("<=tablet") {
+                         width: 75%;
+                    }
                     .img {
                          width: 100%;
                          img {
