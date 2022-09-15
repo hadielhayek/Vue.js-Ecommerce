@@ -124,7 +124,7 @@
                     line-height: 4.3rem;
                }
                @include flex(center, center);
-               span {
+               > span {
                     display: inline-block;
                     @include media("<=tablet") {
                          text-align: center;

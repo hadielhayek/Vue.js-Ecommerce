@@ -109,7 +109,9 @@ import croc from "@/db/croce.json";
                }
           }
           .btn {
-               @include btn(black, rgb(0, 0, 0));
+               @include btn(black, rgb(255, 255, 255)) {
+                    background: black;
+               }
           }
      }
 }
