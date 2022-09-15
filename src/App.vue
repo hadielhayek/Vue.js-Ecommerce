@@ -27,8 +27,7 @@ import Feature from "./components/featured.vue";
 
 import { split } from "./animations/split";
 import { onMounted } from "vue";
-
-onMounted(()=>{
+onMounted(() => {
      split();
-})
+});
 </script>
