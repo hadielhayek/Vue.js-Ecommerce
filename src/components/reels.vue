@@ -2,32 +2,33 @@
      <div class="third_sect">
           <h1>Show Us You Love It</h1>
           <div class="third_sect_carousel contain_wrap">
+            
                <div class="third_sect_carousel_wrap" ref="carousel">
                     <div class="arrows">
-                         <span @click="move('left')" class="left">
-                              <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path
-                                        d="M11.6673 2.66602L2.33398 11.9993L11.6673 21.3327M2.33398 11.9993H23.6673"
-                                        stroke="grey"
-                                        stroke-opacity="0.31"
-                                        stroke-width="3.66667"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                   />
-                              </svg>
-                         </span>
-                         <span @click="move('right')" class="right">
-                              <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path
-                                        d="M14.3327 2.66602L23.666 11.9993L14.3327 21.3327M23.666 11.9993H2.33268"
-                                        stroke="black"
-                                        stroke-width="3.66667"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                   />
-                              </svg>
-                         </span>
-                    </div>
+                    <span @click="move('left')" class="left">
+                         <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                   d="M11.6673 2.66602L2.33398 11.9993L11.6673 21.3327M2.33398 11.9993H23.6673"
+                                   stroke="grey"
+                                   stroke-opacity="0.31"
+                                   stroke-width="3.66667"
+                                   stroke-linecap="round"
+                                   stroke-linejoin="round"
+                              />
+                         </svg>
+                    </span>
+                    <span @click="move('right')" class="right">
+                         <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                   d="M14.3327 2.66602L23.666 11.9993L14.3327 21.3327M23.666 11.9993H2.33268"
+                                   stroke="black"
+                                   stroke-width="3.66667"
+                                   stroke-linecap="round"
+                                   stroke-linejoin="round"
+                              />
+                         </svg>
+                    </span>
+               </div>
                     <div class="third_sect_carousel_wrap_item" v-for="tags in croc.tags" :key="tags.id">
                          <div class="img">
                               <img :src="require(`@/assets/r${tags.id}.svg`)" alt="" />
@@ -46,15 +47,15 @@
 import croc from "@/db/croce.json";
 import { onMounted, ref } from "vue";
 const carousel = ref<any>(null);
-onMounted(() => {
-     console.log(carousel.value.getBoundingClientRect());
-});
+onMounted(()=>{
+     console.log(carousel.value.getBoundingClientRect())
+})
 
-const move = (a: string) => {
-     if (a === "right") {
-          carousel.value.scrollRight += 3000;
-     }
-};
+const move=(a:string)=>{
+    if(a === "right"){
+       carousel.value.scrollRight += 3000;;
+    }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -67,12 +68,12 @@ const move = (a: string) => {
      overflow-x: hidden;
      &_carousel {
           position: relative;
-          .arrows {
+          .arrows{
                position: absolute;
-               top: -5rem;
-               @include flex(space-between, center);
-               gap: 0 2rem;
-               right: 0;
+              top: -5rem;
+              @include flex(space-between, center);
+              gap: 0 2rem;
+              right: 0;
           }
           &_wrap {
                padding-bottom: 2rem;
