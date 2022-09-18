@@ -37,15 +37,27 @@
      padding: 6rem 0px;
      &_wrap {
           @include flex(space-between, center);
+          @include media("<=tablet") {
+               @include flex_col(5rem);
+          }
           .txt {
                @include flex_col(2.6rem);
+               p {
+                    width: 90%;
+               }
                .btn {
                     @include btn(black, black);
+               }
+               @include media("<=tablet") {
+                    width: 100%;
                }
           }
           .img {
                width: 55%;
                img {
+                    width: 100%;
+               }
+               @include media("<=tablet") {
                     width: 100%;
                }
           }
@@ -67,14 +79,11 @@
           }
           &_wrap {
                @include flex(center, center);
-               animation: marquee 20s linear 0s infinite normal forwards;
                flex-wrap: nowrap;
-               gap: 0 0.8rem;
+               animation: marquee 20s linear 0s infinite normal forwards;
+               gap: 0 1rem;
                overflow: visible;
                flex-shrink: 0;
-               @include media("<=phone-tab") {
-                    font-size: 2em !important;
-               }
                &_txt {
                     @include flex(space-between, center);
                }

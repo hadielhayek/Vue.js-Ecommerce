@@ -55,7 +55,7 @@ export default {};
                     width: 80%;
                     margin: 0 auto;
                     @include media("<=tablet") {
-                         width: 95%;
+                         width: 100%;
                     }
                }
           }

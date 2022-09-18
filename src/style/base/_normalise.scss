@@ -24,7 +24,7 @@ h1 {
      font-weight: 300;
      letter-spacing: 0.03em;
      @include media("<=phone-tab") {
-          font-size: 4.5em;
+          font-size: 4em;
           line-height: 3.5rem;
      }
 }

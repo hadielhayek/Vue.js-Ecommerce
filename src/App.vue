@@ -10,6 +10,7 @@
      <Download />
      <Stores />
      <Footer />
+     <div v-if="loggedIn">working</div>
 </template>
 
 <script setup lang="ts">
@@ -27,7 +28,10 @@ import Feature from "./components/featured.vue";
 
 import { split } from "./animations/split";
 import { onMounted } from "vue";
+import { ref } from "@vue/reactivity";
+const loggedIn = ref(false);
 onMounted(() => {
      split();
+     
 });
 </script>

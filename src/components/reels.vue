@@ -93,6 +93,9 @@ const move = (a: string) => {
                scroll-snap-type: x mandatory;
                -webkit-overflow-scrolling: touch;
                gap: 0 3rem;
+               @include media("<tablet") {
+                    padding-left: 5%;
+               }
                &_item {
                     @include flex_col(0.4rem);
                     p {

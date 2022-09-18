@@ -1,6 +1,9 @@
 .contain_wrap {
      width: 93%;
      margin: 0 auto;
+     @include media("<=phone-tab") {
+          width: 90%;
+     }
 }
 .marquee {
      cursor: default;
