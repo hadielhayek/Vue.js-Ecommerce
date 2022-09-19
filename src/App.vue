@@ -1,5 +1,5 @@
 <template>
-     <Preloader />
+     <Preloader v-if="showPreloader" @fade-out="removePreloader"/>
      <landing />
      <Campaign />
      <Arrival />
@@ -32,7 +32,12 @@ import { onMounted } from "vue";
 import { ref } from "@vue/reactivity";
 import Preloader from "./components/preloader.vue";
 const loggedIn = ref(false);
+const showPreloader = ref(true);
+const removePreloader =()=>{
+       showPreloader.value = false;
+     }
 onMounted(() => {
      split();
+   
 });
 </script>
