@@ -33,7 +33,8 @@ onMounted(() => {
      const loader = document.querySelector(".preloader");
      const text = document.querySelectorAll(".preloader svg path");
 
-
+     window.addEventListener("load", () => {
+          console.log("forex");
           setInterval(() => {
                loader.style.background = colors[i];
                text.forEach((item) => {
@@ -42,16 +43,12 @@ onMounted(() => {
                i++;
 
                if (i > textcolArray.length) {
-                  i=0
+                    emit("fadeOut");
+                    return;
                }
           }, 300);
-          window.addEventListener("load", () => {
-                emit("fadeOut");
-          return;
-          });
+     });
 });
-
-
 </script>
 
 <style lang="scss">

@@ -1,6 +1,8 @@
 <template>
-     <Preloader v-if="showPreloader" @fade-out="removePreloader"/>
-     <landing />
+     <transition leave-active-class="animate__animated animate__fadeOut animate__slow">
+          <Preloader v-if="showPreloader" @fade-out="removePreloader" />
+     </transition>
+     <landing v-if="!showPreloader" />
      <Campaign />
      <Arrival />
      <Collab />
@@ -26,18 +28,17 @@ import Campaign from "./components/campaign.vue";
 import Cfc from "./components/funclub.vue";
 import Collab from "./components/collab.vue";
 import Feature from "./components/featured.vue";
-
 import { split } from "./animations/split";
 import { onMounted } from "vue";
 import { ref } from "@vue/reactivity";
 import Preloader from "./components/preloader.vue";
 const loggedIn = ref(false);
 const showPreloader = ref(true);
-const removePreloader =()=>{
-       showPreloader.value = false;
-     }
+const removePreloader = () => {
+     showPreloader.value = false;
+};
 onMounted(() => {
      split();
-   
+     window.scrollTo(0, 0);
 });
 </script>

@@ -9,6 +9,7 @@
     "format": "npx prettier --write src"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
     "gsap": "^3.11.1",
     "splitting": "^1.0.6",
