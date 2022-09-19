@@ -1,5 +1,5 @@
 <template>
-     <Preloader/>
+     <Preloader />
      <landing />
      <Campaign />
      <Arrival />
