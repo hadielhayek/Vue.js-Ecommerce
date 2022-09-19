@@ -32,7 +32,6 @@
           outline: none;
           font-weight: 900;
           color: $col !important;
-          cursor: pointer;
           border: 0.2rem solid $border;
           font-size: 1.5em;
           font-family: Athletic;
@@ -58,8 +57,8 @@
           &:nth-child(1) {
                background: $col1;
                border-right: 1px solid black;
-               @include media("<=phone-tab"){
-                      height: 39rem;
+               @include media("<=phone-tab") {
+                    height: 39rem;
                }
                .sect_1 {
                     width: 85%;
@@ -79,9 +78,9 @@
           &:nth-child(2) {
                background: $col2;
                border-left: 1px solid black;
-               @include media("<=phone-tab"){
+               @include media("<=phone-tab") {
                     height: 35rem;
-             }  
+               }
                @include media("<=phone-tab") {
                     border: {
                          top: 1px solid black;

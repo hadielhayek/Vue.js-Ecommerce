@@ -16,7 +16,7 @@ html {
 }
 body {
      font-family: "Athletic";
-     cursor: url('~@/assets/orange_cursor.svg'), auto;
+     cursor: url("~@/assets/cyan_cursor.svg"), auto;
 }
 h1 {
      font-size: 5.8rem;
@@ -41,6 +41,9 @@ h3 {
 }
 section {
      width: 100%;
+}
+button {
+     cursor: url("~@/assets/green_cursor.svg"), auto;
 }
 p {
      font-size: 1.45em;

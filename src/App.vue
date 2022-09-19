@@ -1,4 +1,5 @@
 <template>
+     <Preloader/>
      <landing />
      <Campaign />
      <Arrival />
@@ -29,6 +30,7 @@ import Feature from "./components/featured.vue";
 import { split } from "./animations/split";
 import { onMounted } from "vue";
 import { ref } from "@vue/reactivity";
+import Preloader from "./components/preloader.vue";
 const loggedIn = ref(false);
 onMounted(() => {
      split();
