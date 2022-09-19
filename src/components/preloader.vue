@@ -32,7 +32,7 @@ const background_colr = ref("#F1F1F1");
 const textcol = ref("#141414");
 
 onMounted(()=>{
-    window.addEventListener("DOMContentLoaded", ()=>{
+    window.addEventListener("load", ()=>{
         console.log("loaded")
     })
 })
