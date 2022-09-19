@@ -46,7 +46,7 @@
                     @extend %polaroid;
                     width: 38rem;
                     @include media("<=tablet") {
-                         width: 100%;
+                         width: 90%;
                     }
                     img {
                          width: 100%;

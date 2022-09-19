@@ -5,7 +5,7 @@
                     <h1>Become A Superfan Club</h1>
                     <p>Join crocs super fan club, to get the best news, deals and discounts, register here or join directly in our app.</p>
                     <div class="btn">
-                         <button>Shop Crocs</button>
+                         <button>Join Club</button>
                     </div>
                </div>
           </div>
@@ -29,9 +29,6 @@
      @include split(#1d62c6, #bcd4f5);
 }
 .cmp {
-     &:nth-child(2){
-          height: 33rem;
-     }
      .sect_1 {
           color: white;
           p {
@@ -45,12 +42,11 @@
           }
      }
      .sect_2 {
-
           .img_cont {
                @extend %polaroid;
                width: 38rem;
                @include media("<=phone") {
-                    width: 85%;
+                    width: 90%;
                }
                img {
                     width: 100%;

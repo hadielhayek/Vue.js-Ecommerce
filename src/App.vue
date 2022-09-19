@@ -32,6 +32,5 @@ import { ref } from "@vue/reactivity";
 const loggedIn = ref(false);
 onMounted(() => {
      split();
-     
 });
 </script>

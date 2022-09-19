@@ -12,6 +12,7 @@
                </div>
                <div class="sha256">
                     <img src="@/assets/14.svg" />
+                    <img src="@/assets/14_.svg" alt="" />
                </div>
           </div>
      </section>
@@ -28,11 +29,12 @@
      background-position: bottom;
      background-image: url(../assets/wav.svg);
      background-repeat: no-repeat;
-     @include media("<=phone-tab") {
-          background-image: none;
+     @include media("<=tablet") {
+          padding-top: 3rem;
+          background-image: url(../assets/wav_mobile.svg);
      }
      &_wrap {
-          @include flex_col(2rem);
+          @include flex_col(2.2rem);
           h1 {
                color: white;
           }
@@ -40,27 +42,37 @@
                @include flex(center, center) {
                     gap: 0 2.4rem;
                }
+               @include media("<=phone-tab") {
+                    @include flex_col(1.5rem);
+               }
                .img {
-                    width: 12rem;
-                    @include media("<=phone-tab") {
-                         width: 9rem;
-                    }
+                    width: 11rem;
                     img {
                          width: 100%;
                     }
                }
           }
           .sha256 {
-               padding-top: 2.2rem;
+               padding-top: 1rem;
                width: 28rem;
                margin: 0 auto;
                position: relative;
                top: 0.29rem;
                @include media("<=phone-tab") {
-                    width: 101%;
+                    width: 90%;
+                    top: 0;
                }
                img {
                     width: 100%;
+                    @include media("<=phone-tab") {
+                         display: none;
+                    }
+                    &:nth-child(2) {
+                         display: none;
+                         @include media("<=phone-tab") {
+                              display: block;
+                         }
+                    }
                }
           }
      }

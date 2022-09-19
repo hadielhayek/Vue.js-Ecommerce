@@ -103,7 +103,7 @@
                     @include media("<=tablet") {
                          gap: 0 0.4rem;
                          width: 100%;
-                         padding: 0.7rem 1rem;
+                         padding: 0.5rem 1rem;
                     }
                     input {
                          width: 80%;
