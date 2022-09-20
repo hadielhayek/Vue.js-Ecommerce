@@ -46,7 +46,7 @@ onMounted(() => {
                     emit("fadeOut");
                     return;
                }
-          }, 300);
+          }, 200);
      });
 });
 </script>
