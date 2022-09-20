@@ -12,7 +12,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="@/assets/sa2_njkafp.svg" alt="" />
+                         <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663678761/salehe_xintyl.svg" alt="" />
                     </div>
                </div>
           </div>
@@ -33,7 +33,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="@/assets/sa1_gedk17.svg" alt="" />
+                         <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663678693/saweetie_njlvjc.svg" alt="" />
                     </div>
                </div>
           </div>
@@ -54,7 +54,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="@/assets/sza.svg" alt="" />
+                         <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663678703/sza_xvpjn1.svg" alt="" />
                     </div>
                </div>
           </div>

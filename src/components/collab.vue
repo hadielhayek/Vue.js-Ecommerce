@@ -11,22 +11,22 @@
                <div class="collab_wrap_slider">
                     <div class="collab_wrap_slider_star">
                          <div class="img">
-                              <img src="@/assets/Star17.svg" alt="" />
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677823/Star17_mmmjc5.svg" alt="" />
                          </div>
                     </div>
                     <div class="collab_wrap_slider_star">
                          <div class="img">
-                              <img src="@/assets/Star13.svg" alt="" />
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star13_lodkbu.svg" alt="" />
                          </div>
                     </div>
                     <div class="collab_wrap_slider_star">
                          <div class="img">
-                              <img src="@/assets/Star16.svg" alt="" />
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star16_rwo3e5.svg" alt="" />
                          </div>
                     </div>
                     <div class="collab_wrap_slider_star">
                          <div class="img">
-                              <img src="@/assets/Star18.svg" alt="" />
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star18_f3cvp6.svg" alt="" />
                          </div>
                     </div>
                </div>
