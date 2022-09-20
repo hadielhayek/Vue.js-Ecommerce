@@ -1,5 +1,5 @@
 <template>
-     <transition leave-active-class="animate__animated animate__fadeOut animate__slow">
+     <transition name="fade">
           <Preloader v-if="showPreloader" @fade-out="removePreloader" />
      </transition>
      <landing v-if="!showPreloader" />
@@ -42,3 +42,15 @@ onMounted(() => {
      window.scrollTo(0, 0);
 });
 </script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+     transition: opacity 1.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+     opacity: 0;
+}
+</style>

@@ -48,7 +48,8 @@ onMounted(() => {
      const text = document.querySelectorAll(".preloader svg path");
 
      gsap.from(".preloader svg g", {
-          stagger: 0.2,
+          stagger: 0.16,
+          delay: 1,
           yPercent: 150,
           duration: 0.5,
           ease: Back.easeInOut.config(1.7),
@@ -69,11 +70,8 @@ onMounted(() => {
                          emit("fadeOut");
                          return;
                     }
-               }, 200);
+               }, 250);
           });
-     // setTimeout(() => {
-
-     // }, 30000);
 });
 </script>
 
