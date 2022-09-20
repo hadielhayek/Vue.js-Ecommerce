@@ -33,7 +33,7 @@ onMounted(() => {
      const loader = document.querySelector(".preloader");
      const text = document.querySelectorAll(".preloader svg path");
 
-     window.addEventListener("load", () => {
+     setTimeout(()=>{
           setInterval(() => {
                loader.style.background = colors[i];
                text.forEach((item) => {
@@ -46,7 +46,11 @@ onMounted(() => {
                     return;
                }
           }, 200);
-     });
+     }, 2000)
+
+     // window.addEventListener("load", () => {
+       
+     // });
 });
 </script>
 
