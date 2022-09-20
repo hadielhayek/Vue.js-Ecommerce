@@ -30,7 +30,7 @@
                     </div>
                     <div class="third_sect_carousel_wrap_item" v-for="tags in croc.tags" :key="tags.id">
                          <div class="img">
-                              <img :src="require(`@/assets/r${tags.id}.svg`)" alt="" />
+                              <img :src="require(`@/assets/r${tags.id}.${tags.format}`)" alt="" />
                          </div>
                          <span class="handle">
                               {{ tags["@"] }}
