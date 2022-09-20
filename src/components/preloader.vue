@@ -49,14 +49,17 @@ onMounted(() => {
 
      gsap.from(".preloader svg g", {
           stagger: 0.16,
-          // delay: 1,
+          delay: 1,
           yPercent: 150,
           duration: 0.5,
           ease: Back.easeInOut.config(1.7),
           autoAlpha: 0,
      })
-     window.addEventListener("load", ()=>{
-          setInterval(() => {
+          .then((r) => {
+               return r;
+          })
+          .then((res) => {
+               setInterval(() => {
                     loader.style.background = colors[i];
                     text.forEach((item) => {
                          item.style.fill = textcolArray[i];
@@ -68,7 +71,7 @@ onMounted(() => {
                          return;
                     }
                }, 250);
-     })
+          });
 });
 </script>
 
