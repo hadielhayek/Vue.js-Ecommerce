@@ -87,7 +87,7 @@ import croc from "@/db/croce.json";
                     }
                     .img {
                          position: relative;
-                          svg{
+                         svg {
                               width: 16rem;
                               @include media("<=phone-tab") {
                                    width: 11rem;

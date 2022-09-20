@@ -4,25 +4,25 @@
                "id": 1,
                "name": "Bamba Sandals",
                "price": 28,
-               "color":"#9DA2FF"
+               "color": "#9DA2FF"
           },
           {
                "id": 2,
                "name": "Crush Crocs",
                "price": 50,
-               "color":"#BDE72F"
+               "color": "#BDE72F"
           },
           {
                "id": 3,
                "name": "Candy Crocs",
                "price": 100,
-               "color":"#3D87F3"
+               "color": "#3D87F3"
           },
           {
                "id": 4,
                "name": "Sweet Crocs",
                "price": 20,
-               "color":"#F9C6EF"
+               "color": "#F9C6EF"
           }
      ],
      "tags": [
