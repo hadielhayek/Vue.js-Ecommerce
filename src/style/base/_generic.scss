@@ -8,6 +8,9 @@
 .marquee {
      cursor: default;
 }
+.abs {
+     position: absolute;
+}
 @keyframes marquee {
      0% {
           transform: translate(0);

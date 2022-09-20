@@ -9,6 +9,8 @@
                     </div>
                </div>
                <div class="img">
+                    <img class="abs sticker_1" src="@/assets/sticker_b2s_1.svg" alt="" />
+                    <img class="abs sticker_2" src="@/assets/sticker_b2s_2.svg" alt="" />
                     <img src="@/assets/b2s.svg" alt="" />
                </div>
           </div>
@@ -34,7 +36,7 @@
 <style lang="scss" scoped>
 .back2school {
      background: #ffad66;
-     padding: 6rem 0px;
+     padding: 7rem 0px;
      &_wrap {
           @include flex(space-between, center);
           @include media("<=tablet") {
@@ -53,9 +55,20 @@
                }
           }
           .img {
-               width: 55%;
+               width: 59%;
+               position: relative;
                img {
                     width: 100%;
+                    .sticker_1 {
+                         width: 18rem;
+                         bottom: -5rem;
+                         left: -6rem;
+                    }
+                    .sticker_2 {
+                         width: 18rem;
+                         right: -3rem;
+                         top: -3rem;
+                    }
                }
                @include media("<=tablet") {
                     width: 100%;
