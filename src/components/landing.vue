@@ -1,12 +1,12 @@
 <template>
      <section class="hero">
           <div class="img_1">
-               <img src="@/assets/WaterLand.svg" alt="" />
-               <img src="@/assets/SurfaceofWater.svg" alt="" />
+               <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677405/WaterLand_rvdn6l.svg" alt="" />
+               <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677392/SurfaceofWater_xndikm.svg" alt="" />
           </div>
           <div class="img_1">
-               <img src="@/assets/waterland_mobile.svg" alt="" />
-               <img src="@/assets/surface_mobile.svg" alt="" />
+               <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677405/waterland_mobile_fb9imp.svg" alt="" />
+               <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677392/surface_mobile_okaqxm.svg" alt="" />
           </div>
           <header class="contain_wrap">
                <svg class="logo" viewBox="0 0 124 25" fill="none" xmlns="http://www.w3.org/2000/svg">
