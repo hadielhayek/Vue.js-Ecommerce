@@ -25,10 +25,7 @@
                </div>
           </div>
           <div class="cmp">
-               <div class="sect_2">
-                    <img src="@/assets/Paint.svg" alt="" style="position: absolute; top: -5rem; left: 0px; width: 18rem" class="paint" />
-                    <img src="@/assets/laptop.svg" style="position: absolute; bottom: -5rem; right: 0px; width: 14rem" alt="" class="laptop" />
-               </div>
+               <div class="sect_2"></div>
           </div>
      </section>
 </template>

@@ -33,9 +33,10 @@ onMounted(() => {
      const loader = document.querySelector(".preloader");
      const text = document.querySelectorAll(".preloader svg path");
 
-     window.addEventListener("load", () => {
-          console.log("forex");
-          setInterval(() => {
+    //  window.addEventListener("load", () => {
+        
+    //  });
+    setInterval(() => {
                loader.style.background = colors[i];
                text.forEach((item) => {
                     item.style.fill = textcolArray[i];
@@ -47,7 +48,6 @@ onMounted(() => {
                     return;
                }
           }, 200);
-     });
 });
 </script>
 
