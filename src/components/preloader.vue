@@ -1,6 +1,6 @@
 <template>
      <div class="preloader wrap">
-          <svg width="366" height="70" viewBox="0 0 366 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 366 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g>
                     <path
                          d="M37.7273 19.4143C42.9188 19.4098 47.8392 22.0178 50.575 25.6732C50.7115 25.8036 50.7115 25.8036 50.8486 25.9339C50.9851 26.0647 51.1217 26.195 51.1218 26.3259C52.8999 28.5449 55.7701 29.8488 58.9125 29.846C64.3774 29.8413 68.8819 25.5264 68.8774 20.3013C68.8752 17.8194 67.9172 15.5998 66.276 13.903C59.4378 5.81016 51.2367 1.11452 37.5744 1.12643C16.1249 1.14513 0.016318 15.3976 0.0337398 35.3834C0.0513898 55.631 16.1848 69.8549 37.7712 69.8361C51.57 69.824 59.6266 65.2451 66.4509 57.924C67.9526 56.2245 68.9069 54.1337 68.9048 51.7827C68.9003 46.5576 64.5247 42.3813 59.0599 42.3861C56.0544 42.3887 53.4598 43.6969 51.6854 45.6581C48.4092 48.796 44.7231 51.8038 37.892 51.8097C28.0553 51.8183 22.4481 45.0304 22.4397 35.3638C22.2947 26.0897 27.7537 19.423 37.7273 19.4143Z"
@@ -37,6 +37,7 @@
 import { reactive, ref } from "@vue/reactivity";
 import { onMounted } from "@vue/runtime-core";
 import { defineEmits } from "vue";
+import { gsap, Back } from "gsap";
 const emit = defineEmits(["fadeOut"]);
 const textcolArray = reactive(["#141414", "white", "#D7BCE5", "#FFA9AA", "#0C3139", "#141414", "white"]);
 const colors = reactive(["#f1f1f1", "#39BC42", "#4A3ECD", "#12203B", "#C7ECF3", "#FFBC01", "#226EDD"]);
@@ -46,20 +47,33 @@ onMounted(() => {
      const loader = document.querySelector(".preloader");
      const text = document.querySelectorAll(".preloader svg path");
 
-     setTimeout(() => {
-          setInterval(() => {
-               loader.style.background = colors[i];
-               text.forEach((item) => {
-                    item.style.fill = textcolArray[i];
-               });
-               i++;
+     gsap.from(".preloader svg g", {
+          stagger: 0.2,
+          yPercent: 150,
+          duration: 0.5,
+          ease: Back.easeInOut.config(1.7),
+          autoAlpha: 0,
+     })
+          .then((r) => {
+               return r;
+          })
+          .then((res) => {
+               setInterval(() => {
+                    loader.style.background = colors[i];
+                    text.forEach((item) => {
+                         item.style.fill = textcolArray[i];
+                    });
+                    i++;
 
-               if (i > textcolArray.length) {
-                    emit("fadeOut");
-                    return;
-               }
-          }, 200);
-     }, 3000);
+                    if (i > textcolArray.length) {
+                         emit("fadeOut");
+                         return;
+                    }
+               }, 200);
+          });
+     // setTimeout(() => {
+
+     // }, 30000);
 });
 </script>
 
@@ -78,38 +92,13 @@ onMounted(() => {
           overflow: hidden;
           width: 15rem;
           g {
-               animation: croc 0.5s 1s ease-out 1 normal forwards;
-               transform: translateY(150%);
                path {
                     fill: #141414;
-               }
-               &:nth-child(2) {
-                    animation-delay: 1.3s;
-               }
-               &:nth-child(3) {
-                    animation-delay: 1.6s;
-               }
-               &:nth-child(4) {
-                    animation-delay: 1.9s;
-               }
-               &:nth-child(5) {
-                    animation-delay: 2.2s;
                }
           }
           @include media("<=phone-tab") {
                width: 10rem;
           }
-     }
-}
-@keyframes croc {
-     0% {
-          transform: translateY(100%);
-     }
-     50% {
-          transform: translateY(-15%);
-     }
-     100% {
-          transform: translateY(0%);
      }
 }
 </style>
