@@ -35,15 +35,25 @@
 
 <style lang="scss" scoped>
 .back2school {
+     overflow-x: hidden;
      background: #ffad66;
      padding: 7rem 0px;
+     @include media("<=phone-tab") {
+          padding: 5rem 0px;
+     }
      &_wrap {
           @include flex(space-between, center);
           @include media("<=tablet") {
                @include flex_col(5rem);
           }
+          @include media("<=phone-tab") {
+               gap: 4rem;
+          }
           .txt {
                @include flex_col(2.6rem);
+               @include media("<=phone-tab") {
+                    gap: 2rem;
+               }
                p {
                     width: 90%;
                }
@@ -57,20 +67,33 @@
           .img {
                width: 59%;
                position: relative;
-               img {
-                    width: 100%;
-                    .sticker_1 {
-                         width: 18rem;
-                         bottom: -5rem;
-                         left: -6rem;
-                    }
-                    .sticker_2 {
-                         width: 18rem;
-                         right: -3rem;
-                         top: -3rem;
+               .sticker_1 {
+                    width: 18rem;
+                    bottom: -5rem;
+                    left: -6rem;
+                    @include media("<=phone-tab") {
+                         width: 9.5rem;
+                         left: -2rem;
+                         bottom: -1.5rem;
                     }
                }
+               .sticker_2 {
+                    width: 18rem;
+                    right: -3rem;
+                    top: -3rem;
+                    @include media("<=phone-tab") {
+                         width: 9.5rem;
+                         top: -2.5rem;
+                         right: -2rem;
+                    }
+               }
+               img {
+                    width: 100%;
+               }
                @include media("<=tablet") {
+                    width: 100%;
+               }
+               @include media("<=phone-tab") {
                     width: 100%;
                }
           }
