@@ -30,25 +30,25 @@
                "id": 1,
                "@": "@jesseakoh",
                "name": "Gang",
-               "format":"svg"
+               "format": "svg"
           },
           {
                "id": 2,
                "@": "@thecreator",
                "name": "SZA",
-               "format":"svg"
+               "format": "svg"
           },
           {
                "id": 3,
                "@": "@sashdesign",
                "name": "Jiggy",
-               "format":"png"
+               "format": "png"
           },
           {
                "id": 4,
                "@": "@olowoshiibi",
                "name": "Ambient",
-               "format":"svg"
+               "format": "svg"
           }
      ]
 }
