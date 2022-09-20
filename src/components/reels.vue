@@ -87,6 +87,7 @@ const move = (a: string) => {
           }
           &_wrap {
                padding-bottom: 2rem;
+               overflow: auto;
                padding-left: 4%;
                @include flex(space-between, center);
                white-space: nowrap;

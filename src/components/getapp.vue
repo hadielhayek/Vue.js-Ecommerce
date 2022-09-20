@@ -31,8 +31,7 @@
                     </div>
                </div>
                <div class="sha256">
-                    <img src="@/assets/14.svg" />
-                    <img src="@/assets/14_.svg" alt="" />
+                    <img src="@/assets/142.svg" alt="">
                </div>
           </div>
      </section>
@@ -44,6 +43,8 @@
 .app_download {
      padding-top: 4rem;
      text-align: center;
+     overflow: hidden;
+     height: 47.5rem;
      background-color: #6738da;
      background-size: cover;
      background-position: bottom;
@@ -52,6 +53,9 @@
      @include media("<=tablet") {
           padding-top: 3rem;
           background-image: url(../assets/wav_mobile.svg);
+     }
+     @include media("<=phone-tab") {
+         height: 53rem;
      }
      &_wrap {
           @include flex_col(2.2rem);
@@ -74,7 +78,7 @@
           }
           .sha256 {
                padding-top: 1rem;
-               width: 28rem;
+               width: 27rem;
                margin: 0 auto;
                position: relative;
                top: 0.29rem;
@@ -84,15 +88,6 @@
                }
                img {
                     width: 100%;
-                    @include media("<=phone-tab") {
-                         display: none;
-                    }
-                    &:nth-child(2) {
-                         display: none;
-                         @include media("<=phone-tab") {
-                              display: block;
-                         }
-                    }
                }
           }
      }
