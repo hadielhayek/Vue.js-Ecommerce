@@ -9,8 +9,8 @@
                     </div>
                </div>
                <div class="img">
-                    <img class="abs sticker_1" src="@/assets/sticker_b2s_1.svg" alt="" />
-                    <img class="abs sticker_2" src="@/assets/sticker_b2s_2.svg" alt="" />
+                    <img data-sticker class="sticker_1" src="@/assets/sticker_b2s_1.svg" alt="" />
+                    <img data-sticker class="sticker_2" src="@/assets/sticker_b2s_2.svg" alt="" />
                     <img src="@/assets/b2s.svg" alt="" />
                </div>
           </div>

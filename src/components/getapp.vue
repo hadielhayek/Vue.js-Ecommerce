@@ -31,7 +31,13 @@
                     </div>
                </div>
                <div class="sha256">
-                    <img src="@/assets/142.svg" alt="">
+                    <img src="@/assets/142.svg" alt="" />
+               </div>
+               <div class="app_download_wrap_stickers">
+                    <img data-sticker src="@/assets/sticker_app_1.svg" alt="" />
+                    <img data-sticker src="@/assets/sticker_app_2.svg" alt="" />
+                    <img data-sticker src="@/assets/sticker_app_3.svg" alt="" />
+                    <img data-sticker src="@/assets/sticker_app_4.svg" alt="" />
                </div>
           </div>
      </section>
@@ -44,7 +50,8 @@
      padding-top: 4rem;
      text-align: center;
      overflow: hidden;
-     height: 47.5rem;
+     position: relative;
+     height: 49rem;
      background-color: #6738da;
      background-size: cover;
      background-position: bottom;
@@ -55,7 +62,7 @@
           background-image: url(../assets/wav_mobile.svg);
      }
      @include media("<=phone-tab") {
-         height: 53rem;
+          height: 53rem;
      }
      &_wrap {
           @include flex_col(2.2rem);
@@ -77,17 +84,39 @@
                }
           }
           .sha256 {
-               padding-top: 1rem;
-               width: 27rem;
+               padding-top: 1.3rem;
+               width: 28rem;
                margin: 0 auto;
                position: relative;
                top: 0.29rem;
+               z-index: 10;
                @include media("<=phone-tab") {
                     width: 90%;
                     top: 0;
                }
                img {
                     width: 100%;
+               }
+          }
+          &_stickers {
+               img {
+                    &:nth-child(1) {
+                         top: 17rem;
+                         left: 16rem;
+                    }
+                    &:nth-child(2) {
+                         bottom: 4.5rem;
+                         left: 21rem;
+                    }
+
+                    &:nth-child(3) {
+                         right: 23rem;
+                         top: 13rem;
+                    }
+                    &:nth-child(4) {
+                         right: 14rem;
+                         bottom: 11rem;
+                    }
                }
           }
      }
