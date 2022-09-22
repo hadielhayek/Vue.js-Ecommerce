@@ -12,7 +12,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img_cont">
-                         <img src="@/assets/club.svg" alt="" />
+                         <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663859421/club_kmtfo4.svg" alt="" />
                     </div>
                </div>
           </div>

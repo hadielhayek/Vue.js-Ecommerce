@@ -12,7 +12,7 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="@/assets/stores_kfmkvk.svg" alt="" />
+                         <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663859440/stores_kfmkvk_q0cy8h.svg" />
                     </div>
                </div>
           </div>

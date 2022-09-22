@@ -11,7 +11,7 @@
                <div class="img">
                     <img data-sticker class="sticker_1" src="@/assets/sticker_b2s_1.svg" alt="" />
                     <img data-sticker class="sticker_2" src="@/assets/sticker_b2s_2.svg" alt="" />
-                    <img src="@/assets/b2s.svg" alt="" />
+                    <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663859493/b2s_jlezwr.svg" alt="" />
                </div>
           </div>
      </section>
