@@ -65,7 +65,7 @@
           height: 57rem;
      }
      @include media("<=phone-tab") {
-          height: 55rem;
+          height: 54rem;
      }
      &_wrap {
           @include flex_col(2.2rem);
@@ -77,7 +77,7 @@
                     gap: 0 2.4rem;
                }
                @include media("<=phone-tab") {
-                    @include flex_col(1.5rem);
+                    @include flex_col(0.8rem);
                }
                .img {
                     width: 11rem;
@@ -107,12 +107,19 @@
           &_stickers {
                img {
                     width: 10.5rem;
+                    @include media("<=phone-tab") {
+                         width: 9rem;
+                    }
                     &:nth-child(1) {
                          top: 17rem;
                          left: 16rem;
                          @include media("<=tablet") {
                               top: 13rem;
                               left: 0rem;
+                         }
+                         @include media("<=phone-tab") {
+                              top: 16.5rem;
+                              left: -1.5rem;
                          }
                     }
                     &:nth-child(2) {
@@ -122,8 +129,11 @@
                               bottom: 2rem;
                               left: 2rem;
                          }
+                         @include media("<=phone-tab") {
+                              bottom: 2.8rem;
+                              left: -1rem;
+                         }
                     }
-
                     &:nth-child(3) {
                          right: 23rem;
                          top: 13rem;
@@ -131,12 +141,20 @@
                               right: 4rem;
                               top: 18rem;
                          }
+                         @include media("<=phone-tab") {
+                              top: 24rem;
+                              right: -2.5rem;
+                         }
                     }
                     &:nth-child(4) {
                          right: 14rem;
                          bottom: 11rem;
                          @include media("<=tablet") {
                               right: 2rem;
+                              bottom: 2rem;
+                         }
+                         @include media("<=phone-tab") {
+                              right: -2rem;
                               bottom: 2rem;
                          }
                     }
