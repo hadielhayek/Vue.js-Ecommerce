@@ -61,8 +61,11 @@
           padding-top: 3rem;
           background-image: url(../assets/wav_mobile.svg);
      }
+     @include media("<=tablet") {
+          height: 57rem;
+     }
      @include media("<=phone-tab") {
-          height: 53rem;
+          height: 55rem;
      }
      &_wrap {
           @include flex_col(2.2rem);
@@ -90,6 +93,9 @@
                position: relative;
                top: 0.29rem;
                z-index: 10;
+               @include media("<=tablet") {
+                    z-index: 0;
+               }
                @include media("<=phone-tab") {
                     width: 90%;
                     top: 0;
@@ -100,22 +106,39 @@
           }
           &_stickers {
                img {
+                    width: 10.5rem;
                     &:nth-child(1) {
                          top: 17rem;
                          left: 16rem;
+                         @include media("<=tablet") {
+                              top: 13rem;
+                              left: 0rem;
+                         }
                     }
                     &:nth-child(2) {
                          bottom: 4.5rem;
                          left: 21rem;
+                         @include media("<=tablet") {
+                              bottom: 2rem;
+                              left: 2rem;
+                         }
                     }
 
                     &:nth-child(3) {
                          right: 23rem;
                          top: 13rem;
+                         @include media("<=tablet") {
+                              right: 4rem;
+                              top: 18rem;
+                         }
                     }
                     &:nth-child(4) {
                          right: 14rem;
                          bottom: 11rem;
+                         @include media("<=tablet") {
+                              right: 2rem;
+                              bottom: 2rem;
+                         }
                     }
                }
           }
