@@ -76,7 +76,7 @@ onMounted(() => {
                     background: pink;
                     height: 47rem;
                     width: 100%;
-                    @include media("<=phone-tab"){
+                    @include media("<=phone-tab") {
                          height: 35rem;
                     }
                }
