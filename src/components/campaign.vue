@@ -34,11 +34,20 @@
 
 <script setup lang="ts">
 import { onMounted } from "@vue/runtime-core";
-import {start} from  "../animations/matter/fall";
+import { start } from "../animations/matter/fall";
 
-onMounted(()=>{
-  start();
-})
+onMounted(() => {
+     const elem = document.querySelector<HTMLElement>(".campaign")!;
+     const observer = new window.IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                    start();
+                    return;
+               }
+          });
+     });
+     observer.observe(elem);
+});
 </script>
 
 <style lang="scss" scoped>
@@ -62,11 +71,14 @@ onMounted(()=>{
      }
      &:nth-child(2) {
           background: $pale-orange;
-          .sect_2 { 
-               canvas{
+          .sect_2 {
+               canvas {
                     background: pink;
                     height: 47rem;
                     width: 100%;
+                    @include media("<=phone-tab"){
+                         height: 35rem;
+                    }
                }
           }
      }
