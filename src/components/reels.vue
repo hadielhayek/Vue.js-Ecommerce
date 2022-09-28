@@ -46,13 +46,10 @@
 import croc from "@/db/croce.json";
 import { onMounted, ref } from "vue";
 const carousel = ref<any>(null);
-onMounted(() => {
-     console.log(carousel.value.getBoundingClientRect());
-});
-
+     
 const move = (a: string) => {
      if (a === "right") {
-          carousel.value.scrollRight += 3000;
+         carousel.value.scrollRight += 3000;
      }
 };
 </script>

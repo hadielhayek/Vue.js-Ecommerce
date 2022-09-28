@@ -1,4 +1,6 @@
 <template>
+     <div>
+     </div>
      <transition name="fade">
           <Preloader v-if="showPreloader" @fade-out="removePreloader" />
      </transition>
