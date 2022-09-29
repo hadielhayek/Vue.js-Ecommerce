@@ -62,7 +62,7 @@ export const start = () => {
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456083/svg3_x2dtzt.svg",
      ].forEach((img, i) => {
           World.add(engine.world, [
-               Bodies.circle(100 + i * 100, 0, 46, {
+               Bodies.circle(100 + i * 100,50, 46, {
                     render: {
                          sprite: {
                               texture: img,
@@ -72,8 +72,7 @@ export const start = () => {
                     },
                     restitution: 0.7,
                     friction: 0.01,
-                    density: 0.0005,
-                    frictionAir: 0.06,
+                    density: 0.0005
                }),
                top,
                ground,

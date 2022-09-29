@@ -42,11 +42,13 @@ onMounted(() => {
           entries.forEach((entry) => {
                if (entry.isIntersecting) {
                     start();
+                    setTimeout(()=>{
+                         observer.disconnect()
+                    }, 1000)
                }
-               // else{
-               //      observer.unobserve(elem)
-               // }
           });
+     }, {
+          threshold:1
      });
      observer.observe(elem);
 });
