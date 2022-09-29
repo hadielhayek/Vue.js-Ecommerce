@@ -3,7 +3,7 @@
           <div class="footer_wrap">
                <div class="inner_div">
                     <div class="footer_wrap_email contain_wrap">
-                         <h3>We Let Friends Know About New Products</h3>
+                         <h3 data-animation="paragraph">We Let Friends Know About New Products</h3>
                          <div class="footer_wrap_email--div">
                               <input type="text" placeholder="Enter Your Email Address" />
                               <div class="btn">

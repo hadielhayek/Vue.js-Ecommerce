@@ -3,7 +3,7 @@
           <div class="cmp">
                <div class="sect_1">
                     <h1>Salehe Bembury Crocs</h1>
-                    <p>Jump into the artistic world of Salehe where he brings his unique designs to crocs.</p>
+                    <p data-animation="paragraph">Jump into the artistic world of Salehe where he brings his unique designs to crocs.</p>
                     <div class="btn">
                          <button>Shop Crocs</button>
                     </div>
@@ -21,7 +21,7 @@
           <div class="cmp">
                <div class="sect_1">
                     <h1>Saweetie Sweet Crocs</h1>
-                    <p>
+                    <p data-animation="paragraph">
                          Make hearts melt but keep your Jibbitz looking cold with an icy drip that only Saweetie can provide. Our all-new Saweetie X
                          Crocs Jibbitz charms are ready to be paired with the irresistible Classic Clogs
                     </p>
@@ -42,7 +42,7 @@
           <div class="cmp">
                <div class="sect_1">
                     <h1>Sza Unique Crocs</h1>
-                    <p>
+                    <p data-animation="paragraph">
                          The SZA X Crocs Classic Clog puts her personality up top, with colorful Jibbitz charms that showcase the world of SZA, totems
                          that keep her grounded, calm, and collective.
                     </p>

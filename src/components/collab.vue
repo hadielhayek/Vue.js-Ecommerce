@@ -3,7 +3,7 @@
           <div class="collab_wrap">
                <div class="collab_wrap_txt contain_wrap">
                     <h1>Crocs SuperStar Collab</h1>
-                    <p>
+                    <p data-animation="paragraph">
                          We make the most confortable shoes in the world, and by partnering with some of your favourite celebrities, We bring thier
                          designs and style to you in incredable confort.
                     </p>

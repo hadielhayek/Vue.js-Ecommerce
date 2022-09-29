@@ -3,7 +3,7 @@
           <div class="cmp">
                <div class="sect_1">
                     <h1>Become A Superfan Club</h1>
-                    <p>Join crocs super fan club, to get the best news, deals and discounts, register here or join directly in our app.</p>
+                    <p data-animation="paragraph">Join crocs super fan club, to get the best news, deals and discounts, register here or join directly in our app.</p>
                     <div class="btn">
                          <button>Join Club</button>
                     </div>
