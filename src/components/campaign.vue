@@ -42,8 +42,10 @@ onMounted(() => {
           entries.forEach((entry) => {
                if (entry.isIntersecting) {
                     start();
-                    return;
                }
+               // else{
+               //      observer.unobserve(elem)
+               // }
           });
      });
      observer.observe(elem);
@@ -73,7 +75,6 @@ onMounted(() => {
           background: $pale-orange;
           .sect_2 {
                canvas {
-                    background: pink;
                     height: 47rem;
                     width: 100%;
                     @include media("<=phone-tab") {
