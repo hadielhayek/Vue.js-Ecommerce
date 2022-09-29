@@ -1,7 +1,7 @@
 <template>
      <section class="app_download">
           <div class="contain_wrap app_download_wrap">
-               <h1>Download The Crocs App</h1>
+               <h1 data-animation="header">Download The Crocs App</h1>
                <div class="app_download_wrap_icons">
                     <div class="img">
                          <svg width="189" height="60" viewBox="0 0 189 60" fill="none" xmlns="http://www.w3.org/2000/svg">
