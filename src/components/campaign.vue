@@ -14,7 +14,7 @@
      <section class="campaign">
           <div class="cmp">
                <div class="sect_1">
-                    <h1 data-animation="header">Create Your Unique Style</h1>
+                    <h1 data-animation="paragraph">Create Your Unique Style</h1>
                     <p data-animation="paragraph">
                          We are starting a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style or theme thier
                          crocs will look like.

@@ -47,7 +47,8 @@ onMounted(() => {
      const loader = document.querySelector(".preloader");
      const text = document.querySelectorAll(".preloader svg path");
 
-     gsap.from(".preloader svg g", {
+     window.addEventListener("DOMContentLoaded", ()=>{
+          gsap.from(".preloader svg g", {
           stagger: 0.16,
           delay: 1,
           yPercent: 150,
@@ -72,6 +73,7 @@ onMounted(() => {
                     }
                }, 250);
           });
+     })
 });
 </script>
 

@@ -1,6 +1,6 @@
 <template>
      <div class="third_sect">
-          <h1 data-animation="header">Show Us You Love It</h1>
+          <h1 data-animation="paragraph">Show Us You Love It</h1>
           <div class="third_sect_carousel">
                <div class="third_sect_carousel_wrap" ref="carousel">
                     <div class="arrows">

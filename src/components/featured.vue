@@ -2,7 +2,7 @@
      <section class="salehe">
           <div class="cmp">
                <div class="sect_1">
-                    <h1 data-animation="header">Salehe Bembury Crocs</h1>
+                    <h1 data-animation="paragraph">Salehe Bembury Crocs</h1>
                     <p data-animation="paragraph">Jump into the artistic world of Salehe where he brings his unique designs to crocs.</p>
                     <div class="btn">
                          <button>Shop Crocs</button>

@@ -2,7 +2,7 @@
      <section class="back2school">
           <div class="contain_wrap back2school_wrap">
                <div class="txt">
-                    <h1 data-animation="header">Crocs Back <br />To School</h1>
+                    <h1 data-animation="paragraph">Crocs Back <br />To School</h1>
                     <p data-animation="paragraph">Get the best Discount on our back to school deals</p>
                     <div class="btn">
                          <button>Shop Crocs</button>

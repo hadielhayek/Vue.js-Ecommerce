@@ -2,7 +2,7 @@
      <section class="stores">
           <div class="cmp">
                <div class="sect_1">
-                    <h1 data-animation="header">Come Say Hii!</h1>
+                    <h1 data-animation="paragraph">Come Say Hii!</h1>
                     <p data-animation="paragraph">See if theres a crocs store in your area. Come Shop We can’t wait to see you.</p>
                     <div class="btn">
                          <button>See Stores available</button>

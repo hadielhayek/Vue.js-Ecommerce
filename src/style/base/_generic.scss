@@ -5,6 +5,13 @@
           width: 90%;
      }
 }
+span.word_wrap {
+     overflow: hidden;
+     display: inline-block;
+ }
+ [data-animation="header"] span.word {
+     overflow: hidden;
+ }
 .marquee {
      cursor: default;
 }

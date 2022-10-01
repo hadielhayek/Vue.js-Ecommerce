@@ -23,8 +23,8 @@
                               </svg>
                               <img class="croc_shuu" :src="require(`@/assets/croc${crocs.id}.svg`)" alt="" />
                          </div>
-                         <p>{{ crocs.name }}</p>
-                         <p class="_price">${{ crocs.price }}</p>
+                         <p data-animation="header">{{ crocs.name }}</p>
+                         <p class="_price" data-animation="header">${{ crocs.price }}</p>
                     </div>
                </div>
                <div class="btn">

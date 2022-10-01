@@ -3,6 +3,7 @@ export const IO = (item:any, options:any) => {
         const observer = new window.IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
+                    console.log(entry.target)
                     resolve();
                 }
             });

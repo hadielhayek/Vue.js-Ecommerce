@@ -14,7 +14,6 @@
      <Download />
      <Stores />
      <Footer />
-     <div v-if="loggedIn">working</div>
 </template>
 
 <script setup lang="ts">
@@ -33,7 +32,6 @@ import { split } from "./animations/split";
 import { onMounted } from "vue";
 import { ref } from "@vue/reactivity";
 import Preloader from "./components/preloader.vue";
-const loggedIn = ref(false);
 const showPreloader = ref(true);
 const removePreloader = () => {
      showPreloader.value = false;
