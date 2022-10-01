@@ -34,8 +34,8 @@ export const split = () => {
                 yPercent: 0,
                 opacity: 1,
                 rotateX: 0,
-                stagger: elem.length > 100 ? 0.01 : 0.02,
-                duration: elem.length > 100 ? 0.5 : 0.6,
+                stagger: elem.length > 100 ? 0.02 : 0.03,
+                duration: elem.length > 100 ? 0.65 : 0.75,
                 ease: "easeOut",
               })
            })
@@ -53,7 +53,6 @@ export const split = () => {
         });
         IO(item, {
             threshold: 1,
-            rootMargin: "-30px",
         }).then(() => {
             const elem = item.querySelectorAll(".char");
             gsap.to(elem, {

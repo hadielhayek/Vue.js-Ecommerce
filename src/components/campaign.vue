@@ -35,22 +35,13 @@
 <script setup lang="ts">
 import { onMounted } from "@vue/runtime-core";
 import { start } from "../animations/matter/fall";
+import {IO} from '../animations/observe'
 
 onMounted(() => {
      const elem = document.querySelector<HTMLElement>(".campaign")!;
-     const observer = new window.IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-               if (entry.isIntersecting) {
-                    start();
-                    setTimeout(()=>{
-                         observer.disconnect()
-                    }, 1000)
-               }
-          });
-     }, {
-          threshold:1
+     IO(elem, {threshold:1}).then(()=>{
+          start();
      });
-     observer.observe(elem);
 });
 </script>
 

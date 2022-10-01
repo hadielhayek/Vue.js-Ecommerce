@@ -50,7 +50,7 @@
                </div>
           </header>
           <div class="hero_ctnt">
-               <h1 data-animation="header">
+               <h1>
                     <span>Style</span>
                     <span>Your</span>
                     <span>Uniqueness</span>
