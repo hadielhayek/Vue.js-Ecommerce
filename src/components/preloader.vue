@@ -47,33 +47,38 @@ onMounted(() => {
      const loader = document.querySelector(".preloader");
      const text = document.querySelectorAll(".preloader svg path");
 
-     window.addEventListener("DOMContentLoaded", ()=>{
-          gsap.from(".preloader svg g", {
-          stagger: 0.16,
-          delay: 1,
-          yPercent: 150,
-          duration: 0.5,
-          ease: Back.easeInOut.config(1.7),
-          autoAlpha: 0,
-     })
-          .then((r) => {
-               return r;
-          })
-          .then((res) => {
-               setInterval(() => {
-                    loader.style.background = colors[i];
-                    text.forEach((item) => {
-                         item.style.fill = textcolArray[i];
-                    });
-                    i++;
+     const animate = () => {
+          setTimeout(() => {
+               requestAnimationFrame(animate);
+               loader.style.background = colors[i];
+               text.forEach((item) => {
+                    item.style.fill = textcolArray[i];
+               });
+               i++;
 
-                    if (i > textcolArray.length) {
-                         emit("fadeOut");
-                         return;
-                    }
-               }, 250);
-          });
-     })
+               if (i > textcolArray.length) {
+                    emit("fadeOut");
+                    return;
+               }
+          }, 250);
+     };
+
+     window.addEventListener("DOMContentLoaded", () => {
+          gsap.from(".preloader svg g", {
+               stagger: 0.16,
+               delay: 1,
+               yPercent: 150,
+               duration: 0.5,
+               ease: Back.easeInOut.config(1.7),
+               autoAlpha: 0,
+          })
+               .then((r) => {
+                    return r;
+               })
+               .then(()=> {
+                    requestAnimationFrame(animate);
+               });
+     });
 });
 </script>
 

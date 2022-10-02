@@ -3,7 +3,7 @@
      <transition name="fade">
           <Preloader v-if="showPreloader" @fade-out="removePreloader" />
      </transition>
-     <landing v-if="!showPreloader" />
+     <landing />
      <Campaign />
      <Arrival />
      <Collab />
