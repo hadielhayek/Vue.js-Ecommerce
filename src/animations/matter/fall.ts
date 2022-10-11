@@ -8,11 +8,11 @@ const Engine = Matter.Engine,
      MouseConstraint = Matter.MouseConstraint,
      World = Matter.World;
 
-export const start = () => {
+export const fallSync = () => {
      const canvas = document.querySelector<HTMLCanvasElement>('[data-animation="matter-drop"]')!;
      const engine = Engine.create();
      engine.timing.timeScale = 0.8;
-     engine.gravity.y = 1;
+     engine.gravity.y = 1.5;
      const render = Render.create({
           canvas: canvas,
           engine: engine,
@@ -22,7 +22,6 @@ export const start = () => {
                showAngleIndicator: false,
           },
      });
-
      const mouse = Mouse.create(render.canvas);
      render.mouse = mouse;
      Render.run(render);
@@ -77,7 +76,11 @@ export const start = () => {
                wall2,
           ]);
      });
-
      const runner = Runner.create();
      Runner.run(runner, engine);
+
+     (function run() {
+          window.requestAnimationFrame(run);
+          Engine.update(engine, 1000 / 60);
+     })();
 };

@@ -16,8 +16,8 @@
                <div class="sect_1">
                     <h1 data-animation="paragraph">Create Your Unique Style</h1>
                     <p data-animation="paragraph">
-                         We are starting a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style or theme thier
-                         crocs will look like.
+                         We are fallSyncing a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style or theme
+                         thier crocs will look like.
                     </p>
                     <div class="btn">
                          <button>Style Crocs</button>
@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import { onMounted } from "@vue/runtime-core";
-import { start } from "../animations/matter/fall";
+import { fallSync } from "../animations/matter/fall";
 
 onMounted(() => {
      const elem = document.querySelector<HTMLElement>(".campaign")!;
@@ -42,10 +42,10 @@ onMounted(() => {
           (entries) => {
                entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                         start();
-                         setTimeout(() => {
-                              observer.disconnect();
-                         }, 1000);
+                         fallSync();
+                         // setTimeout(() => {
+                         //      observer.disconnect();
+                         // }, 1000);
                     }
                });
           },

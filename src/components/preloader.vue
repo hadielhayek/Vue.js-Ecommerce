@@ -75,7 +75,7 @@ onMounted(() => {
                .then((r) => {
                     return r;
                })
-               .then(()=> {
+               .then(() => {
                     requestAnimationFrame(animate);
                });
      });
