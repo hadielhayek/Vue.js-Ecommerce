@@ -14,6 +14,7 @@
                     <div class="img">
                          <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663678761/salehe_xintyl.svg" alt="" />
                     </div>
+                    <canvas data-animation="matter-drop"></canvas>
                </div>
           </div>
      </section>
@@ -35,6 +36,7 @@
                     <div class="img">
                          <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663678693/saweetie_njlvjc.svg" alt="" />
                     </div>
+                    <canvas data-animation="matter-drop"></canvas>
                </div>
           </div>
      </section>
@@ -56,16 +58,43 @@
                     <div class="img">
                          <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663678703/sza_xvpjn1.svg" alt="" />
                     </div>
+                    <canvas data-animation="matter-drop"></canvas>
                </div>
           </div>
      </section>
 </template>
 
-<script>
-export default {};
+<script setup lang="ts">
+import { onMounted } from "@vue/runtime-core";
+import { fallSync } from "../animations/matter/fall";
+
+const m = [
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236786/S_1_anmsbw.png",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236798/Z_zzj2jz.png",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667237040/A_1_u0b3bd.png",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg",
+];
+onMounted(() => {
+     const sza = document.querySelector<HTMLElement>(".sza")!;
+     const salehe = document.querySelector<HTMLElement>(".salahe")!;
+     const saweetie = document.querySelector<HTMLElement>(".saweetie")!;
+     fallSync(sza, m);
+});
 </script>
 
 <style lang="scss" scoped>
+.sect_2 {
+     position: relative;
+     canvas {
+          position: absolute;
+          background: transparent;
+          height: 47rem;
+          width: 100%;
+          @include media("<=phone-tab") {
+               height: 35rem;
+          }
+     }
+}
 .salehe {
      @include split($purple, $lavender);
      @extend %borderb;

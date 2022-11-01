@@ -17,7 +17,7 @@
                     <h1 data-animation="paragraph">Create Your Unique Style</h1>
                     <p data-animation="paragraph">
                          We are fallSyncing a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style or theme
-                         thier crocs will look like.
+                         their crocs will look like.
                     </p>
                     <div class="btn">
                          <button>Style Crocs</button>
@@ -35,25 +35,18 @@
 <script setup lang="ts">
 import { onMounted } from "@vue/runtime-core";
 import { fallSync } from "../animations/matter/fall";
-
+const m = [
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456175/heart_faluri.svg",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456088/svg4_fygbt8.svg",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456083/svg1_giz97q.svg",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456083/Paint_kirpol.svg",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456083/svg5_oltkfa.svg",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456083/svg2_ksaich.svg",
+     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1664456083/svg3_x2dtzt.svg",
+];
 onMounted(() => {
      const elem = document.querySelector<HTMLElement>(".campaign")!;
-     const observer = new window.IntersectionObserver(
-          (entries) => {
-               entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                         fallSync();
-                         // setTimeout(() => {
-                         //      observer.disconnect();
-                         // }, 1000);
-                    }
-               });
-          },
-          {
-               threshold: 0.7,
-          }
-     );
-     observer.observe(elem);
+     fallSync(elem, m);
 });
 </script>
 
