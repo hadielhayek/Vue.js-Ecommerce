@@ -31,19 +31,36 @@
                     </div>
                </div>
                <div class="sha256">
-                    <img src="@/assets/142.svg" alt="" />
+                    <img ref="slider_image" class="animate__animated" src="@/assets/142.svg" alt="" />
                </div>
-               <div class="app_download_wrap_stickers">
-                    <img data-sticker src="@/assets/sticker_app_1.svg" alt="" />
-                    <img data-sticker src="@/assets/sticker_app_2.svg" alt="" />
-                    <img data-sticker src="@/assets/sticker_app_3.svg" alt="" />
-                    <img data-sticker src="@/assets/sticker_app_4.svg" alt="" />
+               <div ref="app_stickers" class="app_download_wrap_stickers">
+                    <img data-sticker class="animate__animated" src="@/assets/sticker_app_1.svg" alt="" />
+                    <img data-sticker class="animate__animated" src="@/assets/sticker_app_2.svg" alt="" />
+                    <img data-sticker class="animate__animated" src="@/assets/sticker_app_3.svg" alt="" />
+                    <img data-sticker class="animate__animated" src="@/assets/sticker_app_4.svg" alt="" />
                </div>
           </div>
      </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { IO } from "@/animations/observe";
+import { onMounted, ref } from "@vue/runtime-core";
+const slider_image = ref(null);
+const app_stickers = ref(null);
+
+onMounted(() => {
+     IO(slider_image.value).then(() => {
+          console.log("peter pan");
+          slider_image.value.classList.toggle("animate__slideInUp");
+     });
+     app_stickers.value.querySelectorAll("[data-sticker]").forEach((item) => {
+          IO(item).then(() => {
+               item.classList.toggle("animate__tada");
+          });
+     });
+});
+</script>
 
 <style lang="scss" scoped>
 .app_download {

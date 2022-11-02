@@ -50,5 +50,23 @@
                "name": "Ambient",
                "format": "svg"
           }
+     ],
+     "collab": [
+          {
+               "id": 1,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677823/Star17_mmmjc5.svg"
+          },
+          {
+               "id": 2,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star13_lodkbu.svg"
+          },
+          {
+               "id": 3,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star16_rwo3e5.svg"
+          },
+          {
+               "id": 4,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star18_f3cvp6.svg"
+          }
      ]
 }
