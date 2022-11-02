@@ -10,7 +10,7 @@ span.word_wrap {
      display: inline-block;
 }
 [data-animation="header"] span.word {
-     overflow: hidden;
+     overflow-y: hidden;
 }
 .marquee {
      cursor: default;

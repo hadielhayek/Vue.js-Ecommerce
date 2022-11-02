@@ -50,7 +50,7 @@
                </div>
           </header>
           <div class="hero_ctnt">
-               <h1>
+               <h1 data-animation="header">
                     <span>Style</span>
                     <span>Your</span>
                     <span>Uniqueness</span>
@@ -129,7 +129,7 @@
                @include flex_col(5.5rem);
           }
           h1 {
-               font-size: 8.5em;
+               font-size: 8.7em;
                flex-wrap: wrap;
                color: $pale-orange;
                gap: 0 1.5rem;
@@ -147,7 +147,10 @@
                }
                @include flex(center, center);
                > span {
-                    display: inline-block;
+                      letter-spacing: 0.01em; 
+                     span{
+                         overflow: visible !important;
+                    }
                     @include media("<=tablet") {
                          text-align: center;
                     }

@@ -8,9 +8,9 @@
                          <button>Shop Crocs</button>
                     </div>
                </div>
-               <div class="img">
-                    <img data-sticker class="sticker_1" src="@/assets/sticker_b2s_1.svg" alt="" />
-                    <img data-sticker class="sticker_2" src="@/assets/sticker_b2s_2.svg" alt="" />
+               <div  class="img">
+                    <img data-sticker class="sticker_1 animate__animated" src="@/assets/sticker_b2s_1.svg" alt="" />
+                    <img data-sticker class="sticker_2 animate__animated" src="@/assets/sticker_b2s_2.svg" alt="" />
                     <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663859493/b2s_jlezwr.svg" alt="" />
                </div>
           </div>
@@ -31,7 +31,21 @@
      </div>
 </template>
 å
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { IO } from "@/animations/observe";
+import { onMounted } from "@vue/runtime-core";
+
+onMounted(() => {
+     const elem = document.querySelectorAll(".back2school .img [data-sticker]");
+
+     elem.forEach((item) => {
+          IO(item).then(() => {
+              item.classList.toggle("animate__jackInTheBox")
+     })
+     })
+     
+})
+</script>
 
 <style lang="scss" scoped>
 .back2school {
@@ -126,12 +140,27 @@
           }
           ._p {
                color: $purple;
+               &:hover {
+                    color: white;
+                    -webkit-text-stroke: 1px cyan;
+                    cursor: url("../assets/cyan_cursor.svg"), auto;
+               }
           }
           ._g {
                color: $red;
+               &:hover {
+                    color: white;
+                    -webkit-text-stroke: 1px pink;
+                    cursor: url("../assets/pink_cursor.svg"), auto;
+          }
           }
           ._a {
                color: $croc-green;
+               &:hover {
+                    color: white;
+                    -webkit-text-stroke: 1px orange;
+                    cursor: url("../assets/orange_cursor.svg"), auto;
+               }
           }
      }
 }

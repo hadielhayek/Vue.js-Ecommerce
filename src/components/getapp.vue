@@ -58,6 +58,10 @@ onMounted(() => {
           IO(item).then(() => {
                item.classList.toggle("animate__tada");
           });
+
+          item.addEventListener("click", () => {
+               item.classList.toggle("animate__tada")
+          })
      });
 });
 </script>
