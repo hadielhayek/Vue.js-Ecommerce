@@ -68,17 +68,27 @@
 import { onMounted } from "@vue/runtime-core";
 import { fallSync } from "../animations/matter/fall";
 
-const m = [
-     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236786/S_1_anmsbw.png",
-     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236798/Z_zzj2jz.png",
-     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667237040/A_1_u0b3bd.png",
-     "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg",
-];
 onMounted(() => {
      const sza = document.querySelector<HTMLElement>(".sza")!;
-     const salehe = document.querySelector<HTMLElement>(".salahe")!;
+     const salehe = document.querySelector<HTMLElement>(".salehe")!;
      const saweetie = document.querySelector<HTMLElement>(".saweetie")!;
-     fallSync(sza, m);
+     fallSync(sza, [
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236786/S_1_anmsbw.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236798/Z_zzj2jz.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667237040/A_1_u0b3bd.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg",
+     ]);
+     fallSync(saweetie, [
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315245/Stickers_V1_upkcvo.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315820/S_2_xrthgv.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315621/W_al2miv.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315606/E_ncc93u.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315606/E2_qxdsgi.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315621/T_fe2srp.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315239/image_40_ajgryd.svg",
+     ]);
+
+     fallSync(salehe, ["https://res.cloudinary.com/dszdgdeoh/image/upload/v1667316205/Frame_zilwad.svg"]);
 });
 </script>
 

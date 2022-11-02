@@ -109,9 +109,19 @@ onMounted(() => {
           }
           ._p {
                color: $pale-orange;
+               &:hover {
+                    color: white;
+                    -webkit-text-stroke: 1px cyan;
+                    cursor: url("../assets/cyan_cursor.svg"), auto;
+               }
           }
           ._g {
                color: $croc-green;
+               &:hover {
+                    color: white;
+                    -webkit-text-stroke: 1px pink;
+                    cursor: url("../assets/pink_cursor.svg"), auto;
+               }
           }
      }
 }

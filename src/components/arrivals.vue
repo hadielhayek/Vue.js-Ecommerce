@@ -21,7 +21,12 @@
                                         stroke-width="1.56936"
                                    />
                               </svg>
-                              <img class="croc_shuu" :src="require(`@/assets/croc${crocs.id}.svg`)" alt="" />
+                              <img
+                                   @click="rubberBand"
+                                   class="croc_shuu animate__animated animate__repeat-1"
+                                   :src="require(`@/assets/croc${crocs.id}.svg`)"
+                                   alt=""
+                              />
                          </div>
                          <p data-animation="header">{{ crocs.name }}</p>
                          <p class="_price" data-animation="header">${{ crocs.price }}</p>
@@ -35,7 +40,33 @@
 </template>
 
 <script setup lang="ts">
+import { IO } from "@/animations/observe";
 import croc from "@/db/croce.json";
+import { onMounted } from "@vue/runtime-core";
+
+const rubberBand = (e: { target: any }) => {
+     e.target.classList.toggle("animate__rubberBand");
+};
+
+onMounted(() => {
+     const elem = document.querySelector(".arrivals")!;
+     const observer = new window.IntersectionObserver(
+          (entries) => {
+               entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                         elem?.querySelectorAll(".croc_shuu").forEach((item, i) => {
+                              setTimeout(() => {
+                                   item.classList.toggle("animate__rubberBand");
+                              }, i * 150);
+                         });
+                    }
+               });
+          },
+          { threshold: 0.5 }
+     );
+
+     observer.observe(elem);
+});
 </script>
 
 <style lang="scss" scoped>
@@ -92,6 +123,9 @@ import croc from "@/db/croce.json";
                               @include media("<=phone-tab") {
                                    width: 11rem;
                               }
+                              &:nth-child(odd) {
+                                   animation: rotate 7s linear infinite normal forwards;
+                              }
                          }
                          .croc_shuu {
                               position: absolute;
@@ -120,6 +154,14 @@ import croc from "@/db/croce.json";
                     background: black;
                }
           }
+     }
+}
+@keyframes rotate {
+     0% {
+          transform: 0;
+     }
+     100% {
+          transform: rotateZ(360deg);
      }
 }
 </style>
