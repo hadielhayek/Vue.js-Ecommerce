@@ -8,7 +8,7 @@
                          <button>Shop Crocs</button>
                     </div>
                </div>
-               <div  class="img">
+               <div class="img">
                     <img data-sticker class="sticker_1 animate__animated" src="@/assets/sticker_b2s_1.svg" alt="" />
                     <img data-sticker class="sticker_2 animate__animated" src="@/assets/sticker_b2s_2.svg" alt="" />
                     <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663859493/b2s_jlezwr.svg" alt="" />
@@ -40,11 +40,10 @@ onMounted(() => {
 
      elem.forEach((item) => {
           IO(item).then(() => {
-              item.classList.toggle("animate__jackInTheBox")
-     })
-     })
-     
-})
+               item.classList.toggle("animate__jackInTheBox");
+          });
+     });
+});
 </script>
 
 <style lang="scss" scoped>
@@ -152,7 +151,7 @@ onMounted(() => {
                     color: white;
                     -webkit-text-stroke: 1px pink;
                     cursor: url("../assets/pink_cursor.svg"), auto;
-          }
+               }
           }
           ._a {
                color: $croc-green;

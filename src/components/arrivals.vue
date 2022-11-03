@@ -54,7 +54,7 @@ onMounted(() => {
           (entries) => {
                entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                         elem?.querySelectorAll(".croc_shuu").forEach((item, i) => {
+                         entry.target.querySelectorAll(".croc_shuu").forEach((item, i) => {
                               setTimeout(() => {
                                    item.classList.toggle("animate__rubberBand");
                               }, i * 150);
@@ -64,7 +64,6 @@ onMounted(() => {
           },
           { threshold: 0.5, rootMargin: "-30px" }
      );
-
      observer.observe(elem);
 });
 </script>

@@ -9,9 +9,24 @@
                     </p>
                </div>
                <div class="collab_wrap_slider">
-                    <div v-for="co in croc.collab" :key="co.id" class="collab_wrap_slider_star">
+                    <div class="collab_wrap_slider_star">
                          <div class="img">
-                              <img :src="co.img" alt="" />
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677823/Star17_mmmjc5.svg" alt="" />
+                         </div>
+                    </div>
+                    <div class="collab_wrap_slider_star">
+                         <div class="img">
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star13_lodkbu.svg" alt="" />
+                         </div>
+                    </div>
+                    <div class="collab_wrap_slider_star">
+                         <div class="img">
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star16_rwo3e5.svg" alt="" />
+                         </div>
+                    </div>
+                    <div class="collab_wrap_slider_star">
+                         <div class="img">
+                              <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star18_f3cvp6.svg" alt="" />
                          </div>
                     </div>
                </div>
@@ -21,6 +36,53 @@
 
 <script lang="ts" setup>
 import croc from "@/db/croce.json";
+import { onMounted } from "@vue/runtime-core";
+var ticking = false;
+var lastScrollLeft = 0;
+
+onMounted(() => {
+     const slider = document.querySelector(".collab_wrap_slider")!;
+     window.addEventListener("scroll", () => {
+          if (!ticking) {
+               window.requestAnimationFrame(() => {
+                    var documentScrollLeft = slider.scrollLeft;
+                    if (lastScrollLeft != documentScrollLeft) {
+                         console.log("scroll x");
+                         lastScrollLeft = documentScrollLeft;
+                    }
+                    ticking = false;
+               });
+               ticking = true;
+          }
+     });
+
+     const elem = document.querySelector(".collab_wrap_slider_star:last-child")!;
+
+     const lastobserver = new window.IntersectionObserver((entries) => {
+          const lastcard = entries[0];
+          if (!lastcard.isIntersecting) {
+               return;
+          }
+          if (lastcard.isIntersecting) {
+               loadnewcard();
+               lastobserver.unobserve(lastcard.target);
+               lastobserver.observe(elem);
+          }
+     });
+     lastobserver.observe(elem);
+
+     const cardContainer = document.querySelector(".collab_wrap_slider");
+     const loadnewcard = () => {
+          for (let i = 0; i < croc.collab.length; i++) {
+               const card = document.createElement("div");
+               card.innerHTML = `<div class="img">
+               <img src="${croc.collab[i].img}" alt>
+          </div>`;
+               card.classList.add("collab_wrap_slider_star");
+               cardContainer?.append(card);
+          }
+     };
+});
 </script>
 
 <style lang="scss" scoped>
@@ -56,12 +118,7 @@ import croc from "@/db/croce.json";
                     gap: 0 2.5rem;
                }
                &_star {
-                    width: 26.5%;
-                    scroll-snap-align: center;
                     flex-shrink: 0;
-                    @include media("<=tablet") {
-                         width: 75%;
-                    }
                     .img {
                          width: 100%;
                          img {

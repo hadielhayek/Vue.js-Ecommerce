@@ -51,7 +51,6 @@ const app_stickers = ref(null);
 
 onMounted(() => {
      IO(slider_image.value).then(() => {
-          console.log("peter pan");
           slider_image.value.classList.toggle("animate__slideInUp");
      });
      app_stickers.value.querySelectorAll("[data-sticker]").forEach((item) => {
@@ -60,8 +59,8 @@ onMounted(() => {
           });
 
           item.addEventListener("click", () => {
-               item.classList.toggle("animate__tada")
-          })
+               item.classList.toggle("animate__tada");
+          });
      });
 });
 </script>

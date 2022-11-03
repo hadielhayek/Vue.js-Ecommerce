@@ -26,3 +26,20 @@ span.word_wrap {
           transform: translateX(-100%);
      }
 }
+.collab_wrap_slider_star {
+     width: 26.5%;
+     flex-shrink: 0 !important;
+
+     @include media("<=tablet") {
+          width: 40%;
+     }
+     @include media("<=phone-tab") {
+          width: 70%;
+     }
+     .img {
+          width: 100%;
+          img {
+               width: 100%;
+          }
+     }
+}

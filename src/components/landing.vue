@@ -147,8 +147,8 @@
                }
                @include flex(center, center);
                > span {
-                      letter-spacing: 0.01em; 
-                     span{
+                    letter-spacing: 0.01em;
+                    span {
                          overflow: visible !important;
                     }
                     @include media("<=tablet") {
