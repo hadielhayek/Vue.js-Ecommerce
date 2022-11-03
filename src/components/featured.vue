@@ -73,22 +73,34 @@ onMounted(() => {
      const salehe = document.querySelector<HTMLElement>(".salehe")!;
      const saweetie = document.querySelector<HTMLElement>(".saweetie")!;
      fallSync(sza, [
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236786/S_1_anmsbw.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667236798/Z_zzj2jz.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667237040/A_1_u0b3bd.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472946/Group_625_drpg4v.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667478770/A_mjc0j9.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472946/Group_626_cu3czr.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667478770/A_mjc0j9.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472946/Group_627_it0okr.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667478770/A_mjc0j9.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg"
      ]);
+
      fallSync(saweetie, [
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315245/Stickers_V1_upkcvo.svg",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315820/S_2_xrthgv.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315621/W_al2miv.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315606/E_ncc93u.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315606/E2_qxdsgi.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315621/T_fe2srp.png",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472718/Group_620_pwc2eo.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472718/Group_621_k6xcm7.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472718/Group_622_v0uhov.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472718/Group_623_dp7sg8.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472718/Group_624_swqngl.svg",
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667315239/image_40_ajgryd.svg",
      ]);
 
-     fallSync(salehe, ["https://res.cloudinary.com/dszdgdeoh/image/upload/v1667316205/Frame_zilwad.svg"]);
+     fallSync(salehe, [
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667316205/Frame_zilwad.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472311/S_xpx4fk.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472350/A_w7j5bo.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472336/L_cbn2zd.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472327/E_yarwx6.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472336/H_cg0hjs.svg",
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472327/E__ttmqob.svg"
+     ]);
 });
 </script>
 

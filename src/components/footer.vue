@@ -15,41 +15,41 @@
                <div class="section2 contain_wrap">
                     <div class="section2_ul">
                          <ul>
-                              <li data-animation="header">CROCS INSIDERS</li>
-                              <li data-animation="header">Crocs Club</li>
-                              <li data-animation="header">Collaborations & Limited Editions</li>
-                              <li data-animation="header">Student Discount</li>
-                              <li data-animation="header">Teacher Discount</li>
-                              <li data-animation="header">Military Discount</li>
-                              <li data-animation="header">Healthcare Discount</li>
-                              <li data-animation="header">Affiliate Program</li>
-                              <li data-animation="header">Gift Cards</li>
+                              <li data-animation="paragraph">CROCS INSIDERS</li>
+                              <li data-animation="paragraph">Crocs Club</li>
+                              <li data-animation="paragraph">Collaborations & Limited Editions</li>
+                              <li data-animation="paragraph">Student Discount</li>
+                              <li data-animation="paragraph">Teacher Discount</li>
+                              <li data-animation="paragraph">Military Discount</li>
+                              <li data-animation="paragraph">Healthcare Discount</li>
+                              <li data-animation="paragraph">Affiliate Program</li>
+                              <li data-animation="paragraph">Gift Cards</li>
                          </ul>
                          <ul>
-                              <li data-animation="header">COMPANY</li>
-                              <li data-animation="header">About Crocs</li>
-                              <li data-animation="header">Crocs Purpose</li>
-                              <li data-animation="header">Careers</li>
-                              <li data-animation="header">Investor Relations</li>
-                              <li data-animation="header">Custom Orders</li>
-                              <li data-animation="header">Wholesale Inquiries</li>
+                              <li data-animation="paragraph">COMPANY</li>
+                              <li data-animation="paragraph">About Crocs</li>
+                              <li data-animation="paragraph">Crocs Purpose</li>
+                              <li data-animation="paragraph">Careers</li>
+                              <li data-animation="paragraph">Investor Relations</li>
+                              <li data-animation="paragraph">Custom Orders</li>
+                              <li data-animation="paragraph">Wholesale Inquiries</li>
                          </ul>
                          <ul>
-                              <li data-animation="header">HELP</li>
-                              <li data-animation="header">Order Status & Returns</li>
-                              <li data-animation="header">FAQs</li>
-                              <li data-animation="header">Size Chart</li>
-                              <li data-animation="header">Accessibility</li>
-                              <li data-animation="header">Caring for your Crocs</li>
+                              <li data-animation="paragraph">HELP</li>
+                              <li data-animation="paragraph">Order Status & Returns</li>
+                              <li data-animation="paragraph">FAQs</li>
+                              <li data-animation="paragraph">Size Chart</li>
+                              <li data-animation="paragraph">Accessibility</li>
+                              <li data-animation="paragraph">Caring for your Crocs</li>
                          </ul>
                          <ul class="socials">
-                              <li data-animation="header">FOLLOW US ON ALL SOCIALS</li>
-                              <li data-animation="header">Instagram</li>
-                              <li data-animation="header">Tik Tok</li>
-                              <li data-animation="header">Pintrest</li>
-                              <li data-animation="header">twitter</li>
-                              <li data-animation="header">Youtube</li>
-                              <li data-animation="header">Facebook</li>
+                              <li data-animation="paragraph">FOLLOW US ON ALL SOCIALS</li>
+                              <li data-animation="paragraph">Instagram</li>
+                              <li data-animation="paragraph">Tik Tok</li>
+                              <li data-animation="paragraph">Pintrest</li>
+                              <li data-animation="paragraph">twitter</li>
+                              <li data-animation="paragraph">Youtube</li>
+                              <li data-animation="paragraph">Facebook</li>
                          </ul>
                          <div class="social_icon">
                               <div class="social_icon_twitter">

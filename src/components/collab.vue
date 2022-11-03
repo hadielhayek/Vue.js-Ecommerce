@@ -37,24 +37,10 @@
 <script lang="ts" setup>
 import croc from "@/db/croce.json";
 import { onMounted } from "@vue/runtime-core";
-var ticking = false;
-var lastScrollLeft = 0;
+
 
 onMounted(() => {
      const slider = document.querySelector(".collab_wrap_slider")!;
-     window.addEventListener("scroll", () => {
-          if (!ticking) {
-               window.requestAnimationFrame(() => {
-                    var documentScrollLeft = slider.scrollLeft;
-                    if (lastScrollLeft != documentScrollLeft) {
-                         console.log("scroll x");
-                         lastScrollLeft = documentScrollLeft;
-                    }
-                    ticking = false;
-               });
-               ticking = true;
-          }
-     });
 
      const elem = document.querySelector(".collab_wrap_slider_star:last-child")!;
 
