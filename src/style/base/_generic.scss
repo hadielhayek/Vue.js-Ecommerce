@@ -43,3 +43,10 @@ span.word_wrap {
           }
      }
 }
+img{
+  -webkit-user-drag: none;
+}
+::selection{
+     background-color: black;
+     color: white;
+}
