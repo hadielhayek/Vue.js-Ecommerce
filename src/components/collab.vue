@@ -8,7 +8,7 @@
                          designs and style to you in incredable confort.
                     </p>
                </div>
-               <div class="collab_wrap_slider" id="draggable">
+               <div class="collab_wrap_slider">
                     <div class="collab_wrap_slider_star">
                          <div class="img">
                               <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677823/Star17_mmmjc5.svg" alt="" />
@@ -37,23 +37,8 @@
 <script lang="ts" setup>
 import croc from "@/db/croce.json";
 import { onMounted } from "@vue/runtime-core";
-import Draggable from "gsap/Draggable";
-import gsap from "gsap"
-
-gsap.registerPlugin(Draggable)
 
 onMounted(() => {
-     Draggable.create("#draggable", {
-          type: "x",
-          inertia: true,
-          edgeResistance: 0.9,
-    maxDuration: 1.2,
-    minDuration: 1.2,
-    lockAxis:true,
-       throwProps:true,
-     })
-     const slider = document.querySelector(".collab_wrap_slider")!;
-
      const elem = document.querySelector(".collab_wrap_slider_star:last-child")!;
      const elements = document.querySelectorAll(".collab_wrap_slider_star");
 
@@ -112,7 +97,7 @@ onMounted(() => {
                gap: 0 3.5rem;
                white-space: nowrap;
                cursor:grab;
-               overflow-x: visible;
+               overflow-x: auto;
                scroll-snap-type: x mandatory;
                -webkit-overflow-scrolling: touch;
                @include media("<=tablet") {
