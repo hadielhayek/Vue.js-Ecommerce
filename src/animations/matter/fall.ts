@@ -8,7 +8,7 @@ const Engine = Matter.Engine,
      MouseConstraint = Matter.MouseConstraint,
      World = Matter.World;
 
-export const fallSync = (elem: any, arrayofimages: any) => {
+export const fallSync = (elem: Element, arrayofimages: Array<string>) => {
      const observer = new window.IntersectionObserver(
           (entries) => {
                entries.forEach((entry) => {
@@ -16,7 +16,7 @@ export const fallSync = (elem: any, arrayofimages: any) => {
                          setTimeout(() => {
                               observer.disconnect();
                          }, 1000);
-                         const canvas = elem.querySelector("canvas");
+                         const canvas = elem.querySelector("canvas") as HTMLCanvasElement;
                          const engine = Engine.create();
                          engine.timing.timeScale = 0.8;
                          engine.gravity.y = 0.8;
@@ -54,7 +54,7 @@ export const fallSync = (elem: any, arrayofimages: any) => {
                          const top = Bodies.rectangle(400, 0, 810, 80, { isStatic: true, render: { fillStyle: "transparent" } });
                          const wall1 = Bodies.rectangle(0, 200, 80, 820, { isStatic: true, render: { fillStyle: "transparent" } });
                          const wall2 = Bodies.rectangle(800, 200, 80, 820, { isStatic: true, render: { fillStyle: "transparent" } });
-                         arrayofimages.forEach((img: string, i: any) => {
+                         arrayofimages.forEach((img: string, i: number) => {
                               World.add(engine.world, [
                                    Bodies.circle(100 + i * 100, 50, 46, {
                                         render: {

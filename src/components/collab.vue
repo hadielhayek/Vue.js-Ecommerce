@@ -53,7 +53,8 @@ onMounted(() => {
                lastobserver.observe(elem);
                elements[0].remove();
           }
-     });3
+     });
+     3;
      lastobserver.observe(elem);
 
      const cardContainer = document.querySelector(".collab_wrap_slider");
@@ -96,7 +97,7 @@ onMounted(() => {
                padding-left: 5%;
                gap: 0 3.5rem;
                white-space: nowrap;
-               cursor:grab;
+               cursor: grab;
                overflow-x: auto;
                scroll-snap-type: x mandatory;
                -webkit-overflow-scrolling: touch;

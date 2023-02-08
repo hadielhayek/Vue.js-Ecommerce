@@ -46,8 +46,8 @@
 <script lang="ts" setup>
 import { IO } from "@/animations/observe";
 import { onMounted, ref } from "@vue/runtime-core";
-const slider_image = ref(null);
-const app_stickers = ref(null);
+const slider_image = ref(Element);
+const app_stickers = ref(Element);
 
 onMounted(() => {
      IO(slider_image.value).then(() => {

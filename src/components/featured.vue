@@ -79,7 +79,7 @@ onMounted(() => {
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667478770/A_mjc0j9.png",
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472946/Group_627_it0okr.svg",
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667478770/A_mjc0j9.png",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg"
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1665585719/flower_vpuwfr.svg",
      ]);
 
      fallSync(saweetie, [
@@ -99,7 +99,7 @@ onMounted(() => {
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472336/L_cbn2zd.svg",
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472327/E_yarwx6.svg",
           "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472336/H_cg0hjs.svg",
-          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472327/E__ttmqob.svg"
+          "https://res.cloudinary.com/dszdgdeoh/image/upload/v1667472327/E__ttmqob.svg",
      ]);
 });
 </script>

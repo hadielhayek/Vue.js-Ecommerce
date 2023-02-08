@@ -10,10 +10,10 @@ export const split = () => {
                target: item,
                by: "lines",
           });
-          line.forEach((splitResult: any) => {
+          line.forEach((splitResult: Record<string, any>) => {
                const wrappedLines = splitResult.words
                     .map(
-                         (wordsArr: any) => `
+                         (wordsArr: Record<string, any>) => `
                        <span class="word_wrap">
                              ${wordsArr.outerHTML}
                         </span>`
