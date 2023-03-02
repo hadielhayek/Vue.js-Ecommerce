@@ -16,8 +16,8 @@
                <div class="sect_1">
                     <h1 data-animation="paragraph">Create Your Unique Style</h1>
                     <p data-animation="paragraph">
-                         We are fallSyncing a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style or theme
-                         their crocs will look like.
+                         We are creating a new campaign (Project Style Your Uniqueness) to enable our customers choose what look, style
+                         or theme their crocs will look like.
                     </p>
                     <div class="btn">
                          <button>Style Crocs</button>

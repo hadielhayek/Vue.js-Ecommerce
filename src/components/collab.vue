@@ -4,8 +4,8 @@
                <div class="collab_wrap_txt contain_wrap">
                     <h1 data-animation="paragraph">Crocs SuperStar Collab</h1>
                     <p data-animation="paragraph">
-                         We make the most confortable shoes in the world, and by partnering with some of your favourite celebrities, We bring thier
-                         designs and style to you in incredable confort.
+                         We make the most confortable shoes in the world, and by partnering with some of your favourite celebrities, We
+                         bring thier designs and style to you in incredable confort.
                     </p>
                </div>
                <div class="collab_wrap_slider">

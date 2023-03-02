@@ -50,10 +50,22 @@ export const fallSync = (elem: Element, arrayofimages: Array<string>) => {
                               max: { x: 800, y: 600 },
                          });
 
-                         const ground = Bodies.rectangle(400, 600, 810, 30, { isStatic: true, render: { fillStyle: "transparent" } });
-                         const top = Bodies.rectangle(400, 0, 810, 80, { isStatic: true, render: { fillStyle: "transparent" } });
-                         const wall1 = Bodies.rectangle(0, 200, 80, 820, { isStatic: true, render: { fillStyle: "transparent" } });
-                         const wall2 = Bodies.rectangle(800, 200, 80, 820, { isStatic: true, render: { fillStyle: "transparent" } });
+                         const ground = Bodies.rectangle(400, 600, 810, 30, {
+                              isStatic: true,
+                              render: { fillStyle: "transparent" },
+                         });
+                         const top = Bodies.rectangle(400, 0, 810, 80, {
+                              isStatic: true,
+                              render: { fillStyle: "transparent" },
+                         });
+                         const wall1 = Bodies.rectangle(0, 200, 80, 820, {
+                              isStatic: true,
+                              render: { fillStyle: "transparent" },
+                         });
+                         const wall2 = Bodies.rectangle(800, 200, 80, 820, {
+                              isStatic: true,
+                              render: { fillStyle: "transparent" },
+                         });
                          arrayofimages.forEach((img: string, i: number) => {
                               World.add(engine.world, [
                                    Bodies.circle(100 + i * 100, 50, 46, {

@@ -203,7 +203,8 @@ $im-no-media-expressions: ("screen", "portrait", "landscape") !default;
                $prefix: get-expression-prefix($operator);
                $value: get-expression-value($condition, $operator);
 
-               @if ($prefix == "max" and $value <= $no-media-breakpoint-value) or ($prefix == "min" and $value > $no-media-breakpoint-value) {
+               @if ($prefix == "max" and $value <= $no-media-breakpoint-value) or ($prefix == "min" and $value > $no-media-breakpoint-value)
+               {
                     @return false;
                }
           } @else if not index($im-no-media-expressions, $condition) {
