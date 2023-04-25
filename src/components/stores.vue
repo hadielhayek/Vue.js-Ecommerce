@@ -12,14 +12,31 @@
           <div class="cmp">
                <div class="sect_2">
                     <div class="img">
-                         <img src="https://res.cloudinary.com/dszdgdeoh/image/upload/v1663859440/stores_kfmkvk_q0cy8h.svg" />
+                          <div class="ds">
+
+                          </div>
                     </div>
                </div>
           </div>
      </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup>
+ import hoverEffect from 'hover-effect'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+     new hoverEffect({
+        parent: window.document.querySelector(".ds"),
+          intensity: 0.5,
+          speedOut: 3,
+          speedIn:5,
+        image1: require('../assets/r2.svg'),
+        image2: require('../assets/r1.svg'),
+        displacementImage: require('../assets/texture2.jpeg')
+    });
+})
+</script>
 
 <style lang="scss" scoped>
 .stores {
@@ -45,11 +62,13 @@
                .img {
                     @extend %polaroid;
                     width: 38rem;
+                    height: 30rem;
                     @include media("<=tablet") {
                          width: 90%;
                     }
-                    img {
+                    .ds{
                          width: 100%;
+                         height: 100%;
                     }
                }
           }
