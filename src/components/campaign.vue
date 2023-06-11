@@ -61,8 +61,10 @@ onMounted(() => {
 .cmp {
      &:nth-child(1) {
           .sect_1 {
+         
                p {
                     width: 100%;
+                    
                }
                .btn {
                     @include btn(black, black);

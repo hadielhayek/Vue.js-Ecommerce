@@ -1,4 +1,4 @@
-# croocs
+# crocs
 
 ## Project setup
 ```
